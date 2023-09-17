@@ -80,19 +80,6 @@ const CreateProjectCards = ({ isVisible, setScrollToSection }) => {
         if (isVisible) {
             setActiveSection("projects");
         }
-        // const getPackageList = async () => {
-            // const options = {
-            //     method: 'GET',
-            //     url: 'https://plugin.tebex.io/packages',
-            //     headers: { 'X-Tebex-Secret': '7c4dd881b76d6249519891ce41781ef8885854a1' }
-            // };
-            // axios.request(options).then(function (response) {
-            // setPackages(response.data);
-            // }).catch(function (error) {
-            // console.error(error);
-            // });
-        // };
-        // getPackageList();
     }, [setActiveSection, isVisible, setScrollToSection]);
 
     const responsive = {
