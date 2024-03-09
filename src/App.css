@@ -2,11 +2,21 @@
   animation: scrollX 20s linear infinite;
 }
 
+.anim_pulse {
+  animation: anim_pulse 1s linear infinite;
+}
+
 @keyframes scrollX {
   from {
     transform: translateX(0);
   }
   to {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes anim_pulse {
+  0% {
+    opacity: 0;
   }
 }

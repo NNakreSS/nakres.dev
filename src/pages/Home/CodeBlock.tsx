@@ -26,7 +26,7 @@ const CodeBlock = () => {
         // silme modundaysa ve tüm text silindiyse
       } else if (isDelete && updateIntext === "") {
         setDelete(false);
-        setDeltaTime(300);
+        setDeltaTime(200);
         // yazılacak yazının indexini belirle , mevcut indexi bir arttırarak tüm yazıların sayısı kadarının modunu al;
         setIndexExpertise((index) => ++index % areasOfExpertise.length);
       }
@@ -53,8 +53,11 @@ const CodeBlock = () => {
           // Selam,ben Serkan
         </code>
         <div className="text-4xl font-semibold text-green-600">
-          {"{"} <span className="border-r-4 border-zinc-600 ">{text}</span>{" "}
-          <span>Developer</span> {"}"}
+          {"{ "}
+          <span className="relative">{text}</span>
+          <span className="text-zinc-500 anim_pulse">|</span>
+          <span> Developer</span>
+          {" }"}
         </div>
       </div>
     </div>
