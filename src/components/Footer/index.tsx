@@ -20,7 +20,7 @@ const Footer = () => (
           <p>nakresdevelopment@gmail.com</p>
         </div>
       </div>
-      <div className="flex flex-row gap-3 text-5xl">
+      <div className="flex flex-row gap-3 text-5xl text-zinc-400">
         <a
           href="https://github.com/NNakreSS"
           target="_blank"
@@ -33,7 +33,7 @@ const Footer = () => (
           href="https://www.youtube.com/channel/UCkHHGxb-5Dun5xcBRZM9CEQ"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-red-400 hover:scale-110 duration-300"
+          className="hover:text-red-500 hover:scale-110 duration-300"
         >
           <FaYoutube />
         </a>
