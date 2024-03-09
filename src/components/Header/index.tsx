@@ -10,7 +10,7 @@ const isNavActive = ({ isActive }: { isActive: boolean }): string =>
   isActive ? "bg-zinc-800/50 p-3 rounded-xl text-amber-400" : "p-3";
 
 const Header = () => (
-  <header className="flex items-center justify-between h-16 w-full border-b-2 border-zinc-800">
+  <header className="flex items-center justify-between h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl ">
     <div id="logo">
       <img src={white_logo} alt="NakreS development logo" className="w-14" />
     </div>
