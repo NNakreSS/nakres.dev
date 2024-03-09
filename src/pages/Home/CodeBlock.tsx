@@ -49,10 +49,10 @@ const CodeBlock = () => {
         </div>
       </div>
       <div className="p-6 flex flex-wrap gap-5">
-        <code className="text-4xl font-bold text-gray-500">
+        <code className="text-4xl font-bold text-gray-500 w-full">
           // Selam,ben Serkan
         </code>
-        <div className="text-4xl font-semibold text-green-600">
+        <div className="text-4xl font-semibold text-green-600 w-full">
           {"{ "}
           <span className="relative">{text}</span>
           <span className="text-zinc-500 anim_pulse">|</span>
