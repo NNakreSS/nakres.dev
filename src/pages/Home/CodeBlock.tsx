@@ -37,7 +37,7 @@ const CodeBlock = () => {
   }, [indexExpertise, text]);
 
   return (
-    <div className="col-span-5 bg-zinc-800 rounded-md ">
+    <div className="w-full lg:w-1/2 bg-zinc-800 rounded-md box-content">
       <div
         id="code-head"
         className="h-10 w-full bg-zinc-700 rounded-t-md flex items-center cursor-pointer"
