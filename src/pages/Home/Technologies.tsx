@@ -14,7 +14,7 @@ const Technologies = () => {
     "flutter",
   ];
   return (
-    <Marque>
+    <Marque className="border-y-2 border-zinc-800 py-5 box-content">
       {myTechlonogies.map((tech, index) => {
         return (
           <img
