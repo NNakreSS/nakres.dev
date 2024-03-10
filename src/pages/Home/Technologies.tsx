@@ -1,4 +1,4 @@
-import Marque from "../../components/Marque";
+import Marquee from "../../components/Marquee";
 
 const Technologies = () => {
   const myTechlonogies = [
@@ -14,7 +14,7 @@ const Technologies = () => {
     "flutter",
   ];
   return (
-    <Marque className="w-full border-y-2 border-zinc-800 py-5 box-content">
+    <Marquee className="w-full border-y-2 border-zinc-800 py-5 box-content">
       {myTechlonogies.map((tech, index) => {
         return (
           <img
@@ -24,7 +24,7 @@ const Technologies = () => {
           />
         );
       })}
-    </Marque>
+    </Marquee>
   );
 };
 
