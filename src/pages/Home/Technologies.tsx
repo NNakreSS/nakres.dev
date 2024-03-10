@@ -27,7 +27,7 @@ const Technologies = () => {
   return (
     <section id="technologies">
       <div className="flex items-center justify-start gap-5 mb-5 font-semibold">
-        <h3 className="text-3xl">Teknolojiler</h3>
+        <h3 className="text-2xl lg:text-4xl">Teknolojiler</h3>
         {isCardView ? (
           <FaCaretUp
             onClick={toggleCardPreview}

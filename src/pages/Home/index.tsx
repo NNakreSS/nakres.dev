@@ -4,7 +4,7 @@ import Technologies from "./Technologies";
 
 const Home = () => (
   <>
-    <div className="flex w-full flex-col gap-32 lg:gap-0 lg:flex-row">
+    <div className="flex w-full flex-col gap-28 lg:gap-10 lg:flex-row">
       <CodeBlock />
       <CallToAction />
     </div>
