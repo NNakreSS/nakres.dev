@@ -21,7 +21,7 @@ const myTechnologies = {
 };
 
 const Technologies = () => {
-  const [isCardView, setIsCardView] = useState<boolean>(true);
+  const [isCardView, setIsCardView] = useState<boolean>(false);
   const toggleCardPreview = () => setIsCardView((prev) => !prev);
 
   return (
