@@ -1,8 +1,9 @@
 import { useState } from "react";
+// components
 import Marquee from "../../components/Marquee";
-// icons
-import { CiSquareChevDown } from "react-icons/ci";
 import { TechnologieCard } from "../../components/Card";
+// icons
+import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
 const myTechlonogies = [
   "html",
@@ -24,10 +25,20 @@ const Technologies = () => {
 
   return (
     <section id="technologies">
-      <CiSquareChevDown
-        onClick={toggleCardPreview}
-        className="mx-auto mb-5 text-4xl text-blue-400 cursor-pointer"
-      />
+      <div className="flex items-center justify-start gap-5 mb-5 font-semibold">
+        <h3 className="text-3xl">Teknolojiler</h3>
+        {isCardView ? (
+          <FaCaretUp
+            onClick={toggleCardPreview}
+            className="text-6xl cursor-pointer animate-pulse"
+          />
+        ) : (
+          <FaCaretDown
+            onClick={toggleCardPreview}
+            className="text-6xl cursor-pointer animate-pulse"
+          />
+        )}
+      </div>
       {isCardView ? (
         <article
           id="techCards"
@@ -35,7 +46,7 @@ const Technologies = () => {
         >
           {myTechlonogies.map((tech, index) => (
             <TechnologieCard
-              className="w-full p-5 gap-5 text-xl lg:text-2xl bg-zinc-800 rounded-md shadow-xl shadow-black"
+              className="w-full p-5 gap-5 text-xl lg:text-2xl bg-zinc-800 rounded-md shadow-xl shadow-black hover:scale-105 duration-300"
               key={index}
               imgSrc={`icons/techlonogies/${tech}.svg`}
               title={tech.toUpperCase()}
