@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
-import Props from "../../interfaces/Props";
+import IProps from "../../interfaces/IProps";
 
-const Marquee: React.FC<Props> = ({ children, className }): ReactNode => (
+const Marquee: React.FC<IProps> = ({ children, className }): ReactNode => (
   <div className={"overflow-hidden flex  justify-start " + className}>
     <div className="marquee flex flex-shrink-0 items-center justify-around whitespace-nowrap">
       {children}

@@ -1,6 +1,6 @@
-import Props from "./Props";
+import Props from "./IProps";
 
-export default interface ButtonProps extends Props {
+export default interface IButton extends Props {
   text?: string;
   type: "primary" | "secondary" | "warning" | "danger";
   variant?: "dashed" | "text" | "filled" | "outlined";

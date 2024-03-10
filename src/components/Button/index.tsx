@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
-import ButtonProps from "../../interfaces/ButtonProps";
+import IButton from "../../interfaces/IButton";
 
 import classNames from "classnames";
 
-const Button: React.FC<ButtonProps> = (
+const Button: React.FC<IButton> = (
   { children, text, className, type, variant },
   props
 ): ReactNode => {
