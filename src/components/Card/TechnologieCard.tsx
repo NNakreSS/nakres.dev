@@ -1,13 +1,16 @@
 import React, { ReactNode } from "react";
 // interfaces
 import ICard from "../../interfaces/ICard";
+import { Link, Route } from "react-router-dom";
 
 const TechnologieCard: React.FC<ICard> = (
-  { imgSrc, title, description, className },
+  { imgSrc, title, description, className, link },
   props
 ): ReactNode => {
   return (
-    <div
+    <Link
+      to={link}
+      target="_blank"
       className={"flex flex-col items-center justify-center" + " " + className}
       {...props}
     >
@@ -20,7 +23,7 @@ const TechnologieCard: React.FC<ICard> = (
       <div className="cardDescription flex items-center justify-center h-1/6">
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

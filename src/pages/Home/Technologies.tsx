@@ -5,19 +5,19 @@ import { TechnologieCard } from "../../components/Card";
 // icons
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
-const myTechlonogies = [
-  "html",
-  "css",
-  "javascript",
-  "typescript",
-  "react",
-  "tailwind",
-  "nodejs",
-  "lua",
-  "c-sharp",
-  "dart",
-  "flutter",
-];
+const myTechnologies = {
+  html: "https://www.w3schools.com/html",
+  css: "https://www.w3schools.com/css",
+  javascript: "https://www.w3schools.com/js",
+  typescript: "https://www.typescriptlang.org/",
+  react: "https://react.dev/",
+  tailwind: "https://tailwindcss.com/",
+  nodejs: "https://nodejs.org/en",
+  lua: "https://www.lua.org/",
+  "c-sharp": "https://www.w3schools.com/cs/index.php",
+  dart: "https://dart.dev/",
+  flutter: "https://flutter.dev/",
+};
 
 const Technologies = () => {
   const [isCardView, setIsCardView] = useState<boolean>(true);
@@ -44,19 +44,20 @@ const Technologies = () => {
           id="techCards"
           className="w-full grid grid-cols-2 lg:grid-cols-4 gap-5"
         >
-          {myTechlonogies.map((tech, index) => (
+          {Object.entries(myTechnologies).map(([tech, link], index) => (
             <TechnologieCard
               className="w-full p-5 gap-5 text-xl lg:text-2xl bg-zinc-800 rounded-md shadow-xl shadow-black hover:scale-105 duration-300"
               key={index}
               imgSrc={`icons/techlonogies/${tech}.svg`}
               title={tech.toUpperCase()}
+              link={link}
             />
           ))}
         </article>
       ) : (
         <article id="techMarquee">
           <Marquee className="w-full border-y-2 border-zinc-800 py-5 box-content select-none">
-            {myTechlonogies.map((tech, index) => {
+            {Object.entries(myTechnologies).map(([tech, _], index) => {
               return (
                 <img
                   key={index}
