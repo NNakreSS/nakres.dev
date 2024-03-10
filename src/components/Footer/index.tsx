@@ -4,6 +4,7 @@ import {
   FaYoutube,
   FaInstagramSquare,
   FaShoppingCart,
+  FaLinkedin,
 } from "react-icons/fa";
 
 const Footer = () => (
@@ -28,7 +29,7 @@ const Footer = () => (
           href="https://github.com/NNakreSS"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-blue-400 hover:scale-110 duration-300"
+          className="hover:text-white hover:scale-110 duration-300"
         >
           <FaGithub />
         </a>
@@ -39,6 +40,14 @@ const Footer = () => (
           className="hover:text-red-500 hover:scale-110 duration-300"
         >
           <FaYoutube />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/serkan-atmaca-04a60a277/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-blue-600 hover:scale-110 duration-300"
+        >
+          <FaLinkedin />
         </a>
         <a
           href="https://www.instagram.com/serkanb.a/"
