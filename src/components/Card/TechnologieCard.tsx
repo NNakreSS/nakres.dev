@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 // interfaces
 import ICard from "../../interfaces/ICard";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TechnologieCard: React.FC<ICard> = (
   { imgSrc, title, description, className, link },
