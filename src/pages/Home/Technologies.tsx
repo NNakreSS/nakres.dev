@@ -9,6 +9,7 @@ const Technologies = () => {
     "react",
     "tailwind",
     "nodejs",
+    "lua",
     "c-sharp",
     "dart",
     "flutter",
