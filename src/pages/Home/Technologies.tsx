@@ -14,6 +14,7 @@ const myTechnologies = {
   tailwind: "https://tailwindcss.com/",
   nodejs: "https://nodejs.org/en",
   lua: "https://www.lua.org/",
+  php: "https://www.php.net/",
   "c-sharp": "https://www.w3schools.com/cs/index.php",
   dart: "https://dart.dev/",
   flutter: "https://flutter.dev/",
