@@ -19,7 +19,7 @@ const Technologies = () => {
         return (
           <img
             key={index}
-            className="w-14 lg:w-28"
+            className="w-14 lg:w-28 mx-5 lg:mx-10"
             src={"icons/techlonogies/" + tech + ".svg"}
           />
         );

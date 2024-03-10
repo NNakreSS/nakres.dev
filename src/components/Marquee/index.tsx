@@ -2,11 +2,11 @@ import React from "react";
 import Props from "../../interfaces/Props";
 
 const Marquee: React.FC<Props> = ({ children, className }) => (
-  <div className={"overflow-hidden flex gap-10 justify-start " + className}>
-    <div className="marque flex flex-shrink-0 gap-10 items-center justify-around">
+  <div className={"overflow-hidden flex  justify-start " + className}>
+    <div className="marquee flex flex-shrink-0 items-center justify-around whitespace-nowrap">
       {children}
     </div>
-    <div className="marque flex flex-shrink-0 gap-10 items-center justify-around">
+    <div className="marquee flex flex-shrink-0 items-center justify-around whitespace-nowrap">
       {children}
     </div>
   </div>

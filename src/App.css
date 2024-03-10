@@ -16,8 +16,8 @@
 
 /* scroll bar end */
 
-.marque {
-  animation: scrollX 20s linear infinite;
+.marquee {
+  animation: scrollX 25s linear infinite;
 }
 
 .anim_pulse {
@@ -27,7 +27,7 @@
 /*  animations  */
 @keyframes scrollX {
   from {
-    transform: translateX(0);
+    left: translateX(0);
   }
   to {
     transform: translateX(-100%);
