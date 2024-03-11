@@ -28,7 +28,7 @@ const Technologies = () => {
   const cardView = (
     <article
       id="techCards"
-      className="w-full grid grid-cols-2 lg:grid-cols-4 gap-5"
+      className="w-full grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5"
     >
       {Object.entries(myTechnologies).map(([tech, link], index) => (
         <div className="group">
