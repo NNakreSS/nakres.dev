@@ -31,10 +31,9 @@ const Technologies = () => {
       className="w-full grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5"
     >
       {Object.entries(myTechnologies).map(([tech, link], index) => (
-        <div className="group">
+        <div className="group" key={index}>
           <TechnologieCard
             className="w-full p-5 gap-5 text-xl lg:text-2xl shadow-inner shadow-black/20 duration-300"
-            key={index}
             imgSrc={`icons/techlonogies/${tech}.svg`}
             title={tech.toUpperCase()}
             link={link}
