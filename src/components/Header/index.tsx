@@ -31,17 +31,6 @@ const Header = () => {
           />
         </div>
 
-        {/* Hamburger menu button */}
-        <div className="flex items-center space-x-2 lg:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-5xl rounded-md dark:hover:bg-zinc-800  dark:focus:bg-zinc-800 focus:outline-none"
-          >
-            {isOpen ? <IoCloseOutline /> : <GiHamburgerMenu />}
-          </button>
-        </div>
-        {/* Hamburger menu button end*/}
-
         {/* Large navbar */}
         <nav className="gap-5 items-center justify-between font-bold text-md hidden lg:flex">
           <NavLink to="/" className={isNavActive}>
@@ -62,13 +51,27 @@ const Header = () => {
         <div id="dark-mode-toggle">
           <img src={lightIcon} alt="Dark mode moon/sun icon" className="w-14" />
         </div>
+
+        {/* Hamburger menu button */}
+        <div className="flex items-center space-x-2 lg:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-5xl rounded-md dark:hover:bg-zinc-800  dark:focus:bg-zinc-800 focus:outline-none"
+          >
+            {isOpen ? <IoCloseOutline /> : <GiHamburgerMenu />}
+          </button>
+        </div>
+        {/* Hamburger menu button end*/}
       </div>
 
       {/* hamburger menu */}
       <div
-        className={"w-full z-20 p-5 lg:hidden " + (isOpen ? "flex" : "hidden")}
+        className={
+          "w-full z-20 py-5 lg:hidden container mx-auto " +
+          (isOpen ? "flex" : "hidden")
+        }
       >
-        <nav className="gap-5 flex flex-col items-center justify-between font-bold text-md w-full">
+        <nav className="gap-5 grid grid-cols-2 font-bold text-md w-full">
           <NavLink to="/" className={isNavActiveBurger}>
             Anasayfa
           </NavLink>
