@@ -6,13 +6,20 @@ const Slide: React.FC<ISlide> = ({ isOpen, children }): ReactNode => {
 
   useEffect(() => {
     const element = slideBoxRef.current!;
-    const scrollHeight: number = element.scrollHeight;
-    console.log("Scroll height: " + scrollHeight);
-    element.style.height = scrollHeight + "px";
+    if (isOpen) {
+      const scrollHeight: number = element.scrollHeight;
+      console.log(scrollHeight);
+      element.style.height = scrollHeight + "px";
+    } else {
+      element.style.height = "0px";
+    }
   }, [isOpen]);
 
   return (
-    <div ref={slideBoxRef} className="overflow-hidden transition-[height_0.5s]">
+    <div
+      ref={slideBoxRef}
+      className="overflow-hidden transition-[height] ease-in-out duration-1000"
+    >
       {children}
     </div>
   );

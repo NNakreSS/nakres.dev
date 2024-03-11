@@ -4,6 +4,7 @@ import Marquee from "../../components/Marquee";
 import { TechnologieCard } from "../../components/Card";
 // icons
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
+import Slide from "../../components/Slide";
 
 const myTechnologies = {
   html: "https://www.w3schools.com/html",
@@ -30,13 +31,15 @@ const Technologies = () => {
       className="w-full grid grid-cols-2 lg:grid-cols-4 gap-5"
     >
       {Object.entries(myTechnologies).map(([tech, link], index) => (
-        <TechnologieCard
-          className="w-full p-5 gap-5 text-xl lg:text-2xl bg-zinc-800 rounded-md shadow-xl shadow-black hover:scale-105 duration-300"
-          key={index}
-          imgSrc={`icons/techlonogies/${tech}.svg`}
-          title={tech.toUpperCase()}
-          link={link}
-        />
+        <div className="group">
+          <TechnologieCard
+            className="w-full p-5 gap-5 text-xl lg:text-2xl bg-zinc-800 shadow-inner shadow-black rounded-md duration-300"
+            key={index}
+            imgSrc={`icons/techlonogies/${tech}.svg`}
+            title={tech.toUpperCase()}
+            link={link}
+          />
+        </div>
       ))}
     </article>
   );
@@ -71,7 +74,10 @@ const Technologies = () => {
           />
         )}
       </div>
-      {isCardView ? cardView : marqueeView}
+      <div className="flex flex-col gap-5 w-full">
+        <Slide isOpen={isCardView}>{cardView}</Slide>
+        {marqueeView}
+      </div>
     </section>
   );
 };
