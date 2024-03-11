@@ -25,6 +25,8 @@
 }
 
 /*  animations  */
+
+/* .marquee animation */
 @keyframes scrollX {
   from {
     left: translateX(0);

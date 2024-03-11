@@ -6,7 +6,7 @@ import Services from "./Services";
 
 const Home = () => (
   <>
-    <div className="flex w-full flex-col gap-28 lg:gap-10 lg:flex-row">
+    <div className="flex w-full flex-col gap-28 lg:gap-10 lg:flex-row text-text-main">
       <CodeBlock />
       <CallToAction />
     </div>

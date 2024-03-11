@@ -1,2 +1,3 @@
 import TechnologieCard from "./TechnologieCard";
-export { TechnologieCard };
+import ServiceCard from "./ServiceCard";
+export { TechnologieCard, ServiceCard };

@@ -12,26 +12,26 @@ const Button: React.FC<IButton> = (
 
   const variantClasses = {
     filled: classNames({
-      "bg-blue-500 !text-white": type == "primary",
-      "bg-violet-500 !text-white": type == "secondary",
-      "bg-amber-500 !text-white": type == "warning",
-      "bg-red-500 !text-white": type == "danger",
+      "bg-primary !text-text-main": type == "primary",
+      "bg-secondary !text-text-main": type == "secondary",
+      "bg-warning !text-text-main": type == "warning",
+      "bg-danger !text-text-main": type == "danger",
     }),
     outlined: classNames({
-      "border-blue-500": type == "primary",
-      "border-violet-500": type == "secondary",
-      "border-amber-500": type == "warning",
-      "border-red-500": type == "danger",
+      "border-primary": type == "primary",
+      "border-secondary": type == "secondary",
+      "border-warning": type == "warning",
+      "border-danger": type == "danger",
     }),
     dashed: "border-dashed",
     text: "border-none",
   };
 
   const typeClasses = {
-    primary: "border-blue-500 text-blue-500",
-    secondary: "border-violet-500 text-violet-500",
-    warning: "border-amber-500 text-amber-500",
-    danger: "border-red-500 text-red-500",
+    primary: "border-primary text-primary",
+    secondary: "border-secondary text-secondary",
+    warning: "border-warning text-warning",
+    danger: "border-danger text-danger",
   };
 
   const classes = classNames(

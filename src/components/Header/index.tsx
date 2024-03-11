@@ -3,30 +3,42 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 // logo
 import white_logo from "../../assets/logo/nakres_logo_white.svg";
+import black_logo from "../../assets/logo/nakres_logo_black.svg";
 // icons
-import lightIcon from "../../assets/icons/lightIcon.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import { MdLightMode, MdModeNight } from "react-icons/md";
+// REDUX
+import { themeSelector, toggleDarkMode } from "../../redux/slicers/themeSlice";
+import { useSelector, useDispatch } from "react-redux";
+// component
 import Slide from "../Slide";
 
 // NavLink check active className
 const isNavActive = ({ isActive }: { isActive: boolean }): string =>
-  isActive ? "bg-zinc-800/50 p-3 rounded-xl text-amber-400" : "p-3";
+  isActive ? "bg-card/50 p-3 rounded-xl text-warning" : "p-3";
 
 const isNavActiveBurger = ({ isActive }: { isActive: boolean }): string =>
   isActive
-    ? "w-full text-center bg-zinc-800 p-3 rounded-xl text-amber-400"
-    : "rounded-xl p-3 w-full text-center bg-zinc-800/50";
+    ? "w-full text-center bg-card p-3 rounded-xl text-warning"
+    : "rounded-xl p-3 w-full text-center bg-card/50";
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const { darkMode } = useSelector(themeSelector);
+  // hamburger menu status
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  // hamburger menu open close
   const toggleMenu = () => setIsOpen((prev) => !prev);
+  // toggle dark mode button action
+  const toggleMode = () => dispatch(toggleDarkMode());
+
   return (
-    <header className="min-h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl z-10">
+    <header className="min-h-16 w-full border-b-2 border-border sticky top-0 backdrop-blur-xl z-10 text-text-main">
       <div className="container mx-auto flex items-center justify-between py-2 px-2 lg:px-20">
         <div id="logo">
           <img
-            src={white_logo}
+            src={darkMode ? white_logo : black_logo}
             alt="NakreS development logo"
             className="w-14"
           />
@@ -49,16 +61,17 @@ const Header = () => {
         </nav>
         {/* Large navbar end*/}
 
-        <div id="dark-mode-toggle">
-          <img src={lightIcon} alt="Dark mode moon/sun icon" className="w-14" />
+        <div
+          id="dark-mode-toggle"
+          className="cursor-pointer text-3xl"
+          onClick={toggleMode}
+        >
+          {darkMode ? <MdLightMode /> : <MdModeNight />}
         </div>
 
         {/* Hamburger menu button */}
         <div className="flex items-center space-x-2 lg:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-5xl rounded-md dark:hover:bg-zinc-800  dark:focus:bg-zinc-800 focus:outline-none"
-          >
+          <button onClick={toggleMenu} className="text-5xl focus:outline-none">
             {isOpen ? <IoCloseOutline /> : <GiHamburgerMenu />}
           </button>
         </div>

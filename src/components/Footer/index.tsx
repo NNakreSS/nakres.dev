@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => (
-  <footer className="border-zinc-800 border-t-2 mt-20 text-white">
+  <footer className="border-border border-t-2 mt-20 text-text-main">
     <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center lg:justify-between  gap-3 py-8 px-2 lg:px-20">
       <div className="flex flex-col mb-4 lg:mb-0">
         <h5 className="text-lg font-bold mb-2">İletişim Bilgileri</h5>
@@ -24,12 +24,12 @@ const Footer = () => (
       <div>
         <span>Copyright © 2024 NakreS Development. All rights reserved.</span>
       </div>
-      <div className="flex flex-row gap-3 text-2xl lg:text-4xl text-zinc-400">
+      <div className="flex flex-row gap-3 text-2xl lg:text-4xl text-text-second">
         <a
           href="https://github.com/NNakreSS"
           target="_blank"
           rel="noreferrer"
-          className="hover:text-white hover:scale-110 duration-300"
+          className="hover:text-text-main hover:scale-110 duration-300"
         >
           <FaGithub />
         </a>

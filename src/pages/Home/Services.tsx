@@ -1,4 +1,4 @@
-import ServiceCard from "../../components/Card/ServiceCard";
+import { ServiceCard } from "../../components/Card";
 
 const services = [
   {
@@ -19,7 +19,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" className="text-text-main">
       <div className="flex mb-5">
         <h3 className="text-2xl lg:text-4xl font-semibold ">Hizmetler</h3>
       </div>
@@ -29,7 +29,7 @@ const Services = () => {
             key={index}
             title={title}
             description={description}
-            className="w-full bg-zinc-800 p-5 rounded-md min-h-60 flex flex-col gap-10 justify-stretch shadow-inner shadow-black"
+            className="w-full p-5  min-h-60 flex flex-col gap-10 justify-stretch shadow-inner shadow-black/20"
           />
         ))}
       </div>

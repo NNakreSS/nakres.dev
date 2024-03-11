@@ -5,16 +5,32 @@ import Header from "./components/Header";
 // pages
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+// redux
+import { useSelector } from "react-redux";
+import { themeSelector } from "./redux/slicers/themeSlice";
+import classNames from "classnames";
 
-const App = () => (
-  <div className="dark dark:bg-zinc-900  min-h-screen min-w-full dark:text-gray-200 flex flex-col">
-    <Header />
-    <main className="flex-0 w-full flex flex-col gap-4 mt-10 gap-y-40 container mx-auto px-2 lg:px-20">
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </main>
-    <Footer />
-  </div>
-);
+const App = () => {
+  const { darkMode } = useSelector(themeSelector);
+
+  return (
+    <div
+      className={classNames(
+        "bg-background min-h-screen min-w-full flex flex-col transition duration-300 ease-linear",
+        {
+          light: !darkMode,
+          dark: darkMode,
+        }
+      )}
+    >
+      <Header />
+      <main className="flex-0 w-full flex flex-col gap-4 mt-10 gap-y-40 container mx-auto px-2 lg:px-20">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 export default App;

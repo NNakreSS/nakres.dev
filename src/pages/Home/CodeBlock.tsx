@@ -37,25 +37,25 @@ const CodeBlock = () => {
   }, [indexExpertise, text]);
 
   return (
-    <div className="w-full lg:w-1/2 bg-zinc-800 rounded-md box-content">
+    <div className="w-full lg:w-1/2 bg-card rounded-md box-content">
       <div
         id="code-head"
-        className="h-10 w-full bg-zinc-700 rounded-t-md flex items-center cursor-pointer"
+        className="h-10 w-full bg-card-second rounded-t-md flex items-center cursor-pointer"
       >
-        <div className="flex items-center justify-between h-2/4 ml-1 gap-2 bg-zinc-900 p-4 rounded-sm">
+        <div className="flex items-center justify-between h-2/4 ml-1 gap-2 bg-background p-4 rounded-sm">
           <span className="font-bold text-yellow-400">JS</span>
           <span>Hello.js</span>
-          <span className="font-thin text-gray-200">x</span>
+          <span>x</span>
         </div>
       </div>
       <div className="text-2xl xl:text-4xl p-6 flex flex-wrap gap-5">
-        <code className="font-bold text-gray-500 w-full">
+        <code className="font-bold text-text-second/50 w-full">
           // Selam,ben Serkan
         </code>
         <div className="font-semibold text-green-600 w-full">
           {"{ "}
           <span className="relative">{text}</span>
-          <span className="text-zinc-500 anim_pulse">|</span>
+          <span className="text-text-second anim_pulse">|</span>
           <span> Developer</span>
           {" }"}
         </div>

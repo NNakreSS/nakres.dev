@@ -33,7 +33,7 @@ const Technologies = () => {
       {Object.entries(myTechnologies).map(([tech, link], index) => (
         <div className="group">
           <TechnologieCard
-            className="w-full p-5 gap-5 text-xl lg:text-2xl bg-zinc-800 shadow-inner shadow-black rounded-md duration-300"
+            className="w-full p-5 gap-5 text-xl lg:text-2xl shadow-inner shadow-black/20 duration-300"
             key={index}
             imgSrc={`icons/techlonogies/${tech}.svg`}
             title={tech.toUpperCase()}
@@ -45,7 +45,7 @@ const Technologies = () => {
   );
   const marqueeView = (
     <article id="techMarquee">
-      <Marquee className="w-full border-y-2 border-zinc-800 py-5 box-content select-none">
+      <Marquee className="w-full border-y-2 border-border py-5 box-content select-none">
         {Object.entries(myTechnologies).map(([tech, _], index) => {
           return (
             <img
@@ -59,7 +59,7 @@ const Technologies = () => {
     </article>
   );
   return (
-    <section id="technologies">
+    <section id="technologies" className="text-text-main">
       <div className="flex items-center justify-start gap-5 mb-5">
         <h3 className="text-2xl lg:text-4xl font-semibold">Teknolojiler</h3>
         {isCardView ? (

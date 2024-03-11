@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark {
+  --background: 24, 24, 27;
+  --border: 39, 39, 42;
+  --card: 39, 39, 42;
+  --card-second: 63, 63, 70;
+  --text-main: 229, 231, 235;
+  --text-second: 107, 114, 128;
+  --primary: 59, 130, 246;
+  --secondary: 139, 92, 246;
+  --warning: 234, 179, 8;
+  --danger: 219, 39, 119;
+}
+
+.light {
+  --background: 255, 255, 255;
+  --border: 229, 231, 235;
+  --card: 212, 212, 216;
+  --card-second: 243, 244, 246;
+  --text-main: 24, 24, 27;
+  --text-second: 107, 114, 128;
+  --primary: 59, 130, 246;
+  --secondary: 139, 92, 246;
+  --warning: 251, 191, 36;
+  --danger: 219, 39, 119;
+}
