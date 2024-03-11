@@ -8,7 +8,6 @@ const Slide: React.FC<ISlide> = ({ isOpen, children }): ReactNode => {
     const element = slideBoxRef.current!;
     if (isOpen) {
       const scrollHeight: number = element.scrollHeight;
-      console.log(scrollHeight);
       element.style.height = scrollHeight + "px";
     } else {
       element.style.height = "0px";
