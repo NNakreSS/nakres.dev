@@ -1,6 +1,6 @@
 import Props from "./IProps";
 
-export default interface ICard extends Props {
+export default interface ITechnologieCard extends Props {
   imgSrc?: string;
   title?: string;
   description?: string;

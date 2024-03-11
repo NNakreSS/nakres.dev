@@ -1,9 +1,9 @@
 import React, { ReactNode } from "react";
 // interfaces
-import ICard from "../../interfaces/ICard";
+import ITechnologieCard from "../../interfaces/ITechnologieCard";
 import { Link } from "react-router-dom";
 
-const TechnologieCard: React.FC<ICard> = (
+const TechnologieCard: React.FC<ITechnologieCard> = (
   { imgSrc, title, description, className, link },
   props
 ): ReactNode => {
