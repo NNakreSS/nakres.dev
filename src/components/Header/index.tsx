@@ -7,6 +7,7 @@ import white_logo from "../../assets/logo/nakres_logo_white.svg";
 import lightIcon from "../../assets/icons/lightIcon.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseOutline } from "react-icons/io5";
+import Slide from "../Slide";
 
 // NavLink check active className
 const isNavActive = ({ isActive }: { isActive: boolean }): string =>
@@ -23,7 +24,7 @@ const Header = () => {
   return (
     <header className="min-h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl z-10">
       <div className="container mx-auto flex items-center justify-between py-2 px-2 lg:px-20">
-        <div id="logo" className="hidden lg:block">
+        <div id="logo">
           <img
             src={white_logo}
             alt="NakreS development logo"
@@ -65,27 +66,24 @@ const Header = () => {
       </div>
 
       {/* hamburger menu */}
-      <div
-        className={
-          "w-full z-20 py-5 lg:hidden container mx-auto " +
-          (isOpen ? "flex" : "hidden")
-        }
-      >
-        <nav className="gap-5 grid grid-cols-2 font-bold text-md w-full">
-          <NavLink to="/" className={isNavActiveBurger}>
-            Anasayfa
-          </NavLink>
-          <NavLink to="/projects" className={isNavActiveBurger}>
-            Projelerim
-          </NavLink>
-          <NavLink to="/articles" className={isNavActiveBurger}>
-            Makaleler
-          </NavLink>
-          <NavLink to="/contact" className={isNavActiveBurger}>
-            İletişim
-          </NavLink>
-        </nav>
-      </div>
+      <Slide isOpen={isOpen}>
+        <div className="w-full z-20 py-5 px-2 lg:hidden container mx-auto ">
+          <nav className="gap-5 grid grid-cols-2 font-bold text-md w-full">
+            <NavLink to="/" className={isNavActiveBurger}>
+              Anasayfa
+            </NavLink>
+            <NavLink to="/projects" className={isNavActiveBurger}>
+              Projelerim
+            </NavLink>
+            <NavLink to="/articles" className={isNavActiveBurger}>
+              Makaleler
+            </NavLink>
+            <NavLink to="/contact" className={isNavActiveBurger}>
+              İletişim
+            </NavLink>
+          </nav>
+        </div>
+      </Slide>
       {/* hamburger menu end */}
     </header>
   );
