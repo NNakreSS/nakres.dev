@@ -21,8 +21,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
   return (
-    <header className="min-h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl py-2 lg:px-20 z-10">
-      <div className="container mx-auto flex items-center justify-between">
+    <header className="min-h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl z-10">
+      <div className="container mx-auto flex items-center justify-between py-2 px-2 lg:px-20">
         <div id="logo" className="hidden lg:block">
           <img
             src={white_logo}
@@ -35,7 +35,7 @@ const Header = () => {
         <div className="flex items-center space-x-2 lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-5xl p-1 rounded-md dark:hover:bg-zinc-800  dark:focus:bg-zinc-800 focus:outline-none"
+            className="text-5xl rounded-md dark:hover:bg-zinc-800  dark:focus:bg-zinc-800 focus:outline-none"
           >
             {isOpen ? <IoCloseOutline /> : <GiHamburgerMenu />}
           </button>

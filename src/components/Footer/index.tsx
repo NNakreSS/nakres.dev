@@ -8,8 +8,8 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => (
-  <footer className="border-zinc-800 border-t-2 mt-20 text-white py-8 lg:px-20">
-    <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center lg:justify-between px-4 gap-3">
+  <footer className="border-zinc-800 border-t-2 mt-20 text-white">
+    <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center lg:justify-between  gap-3 py-8 px-2 lg:px-20">
       <div className="flex flex-col mb-4 lg:mb-0">
         <h5 className="text-lg font-bold mb-2">İletişim Bilgileri</h5>
         <div className="flex items-center mb-2">
