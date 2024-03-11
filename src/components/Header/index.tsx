@@ -21,7 +21,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
   return (
-    <header className="min-h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl lg:px-20 z-10">
+    <header className="min-h-16 w-full border-b-2 border-zinc-800 sticky top-0 backdrop-blur-xl py-2 lg:px-20 z-10">
       <div className="container mx-auto flex items-center justify-between">
         <div id="logo" className="hidden lg:block">
           <img
