@@ -1,6 +1,8 @@
+// components
 import CallToAction from "./CallToAction";
 import CodeBlock from "./CodeBlock";
 import Technologies from "./Technologies";
+import Services from "./Services";
 
 const Home = () => (
   <>
@@ -9,6 +11,7 @@ const Home = () => (
       <CallToAction />
     </div>
     <Technologies />
+    <Services />
   </>
 );
 
