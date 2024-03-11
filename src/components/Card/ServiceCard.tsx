@@ -9,8 +9,10 @@ const ServiceCard: React.FC<IServiceCard> = ({
 }): ReactNode => {
   return (
     <div className={className}>
-      <h4 className="text-center text-3xl">{title}</h4>
-      <p className="text-center text-zinc-300">{description}</p>
+      <h4 className="text-center text-2xl lg:text-3xl">{title}</h4>
+      <p className="text-center text-zinc-300 text-sm lg:text-md">
+        {description}
+      </p>
     </div>
   );
 };
