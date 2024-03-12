@@ -13,15 +13,15 @@ import { themeSelector, toggleDarkMode } from "../../redux/slicers/themeSlice";
 import { useSelector, useDispatch } from "react-redux";
 // component
 import Slide from "../Slide";
+import classNames from "classnames";
 
-// NavLink check active className
-const isNavActive = ({ isActive }: { isActive: boolean }): string =>
-  isActive ? "bg-card/50 p-3 rounded-xl text-warning" : "p-3";
-
-const isNavActiveBurger = ({ isActive }: { isActive: boolean }): string =>
-  isActive
-    ? "w-full text-center bg-card p-3 rounded-xl text-warning"
-    : "rounded-xl p-3 w-full text-center bg-card/50";
+const navButtonClass = ({ isActive }: { isActive: boolean }) =>
+  classNames(
+    "bg-card/30 lg:bg-card/0 p-2 rounded-md w-full text-center font-semibold transition duration-300",
+    {
+      "text-warning !bg-card": isActive,
+    }
+  );
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -45,17 +45,17 @@ const Header = () => {
         </div>
 
         {/* Large navbar */}
-        <nav className="gap-5 items-center justify-between font-bold text-md hidden lg:flex">
-          <NavLink to="/" className={isNavActive}>
+        <nav className="gap-5 items-center justify-between  hidden lg:flex">
+          <NavLink to="/" className={navButtonClass}>
             Anasayfa
           </NavLink>
-          <NavLink to="/projects" className={isNavActive}>
+          <NavLink to="/projects" className={navButtonClass}>
             Projelerim
           </NavLink>
-          <NavLink to="/articles" className={isNavActive}>
+          <NavLink to="/articles" className={navButtonClass}>
             Makaleler
           </NavLink>
-          <NavLink to="/contact" className={isNavActive}>
+          <NavLink to="/contact" className={navButtonClass}>
             İletişim
           </NavLink>
         </nav>
@@ -81,17 +81,17 @@ const Header = () => {
       {/* hamburger menu */}
       <Slide isOpen={isOpen}>
         <div className="w-full z-20 py-5 px-2 lg:hidden container mx-auto ">
-          <nav className="gap-5 grid grid-cols-2 font-bold text-md w-full">
-            <NavLink to="/" className={isNavActiveBurger}>
+          <nav className="gap-5 grid grid-cols-2  text-md w-full">
+            <NavLink to="/" className={navButtonClass}>
               Anasayfa
             </NavLink>
-            <NavLink to="/projects" className={isNavActiveBurger}>
+            <NavLink to="/projects" className={navButtonClass}>
               Projelerim
             </NavLink>
-            <NavLink to="/articles" className={isNavActiveBurger}>
+            <NavLink to="/articles" className={navButtonClass}>
               Makaleler
             </NavLink>
-            <NavLink to="/contact" className={isNavActiveBurger}>
+            <NavLink to="/contact" className={navButtonClass}>
               İletişim
             </NavLink>
           </nav>
