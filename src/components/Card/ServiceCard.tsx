@@ -11,9 +11,7 @@ const ServiceCard: React.FC<IServiceCard> = ({
   return (
     <div className={classNames(className, "bg-card rounded-md")}>
       <h4 className="text-center text-2xl lg:text-3xl">{title}</h4>
-      <p className="text-center text-text-main/90 text-sm lg:text-md">
-        {description}
-      </p>
+      <p className="text-center text-text-main/90 text-md">{description}</p>
     </div>
   );
 };
