@@ -1,9 +1,11 @@
-import { NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import INavItem from "../../interfaces/INavItem";
 import React from "react";
+import { NavLink } from "react-router-dom";
+// loalization
+import { useTranslation } from "react-i18next";
+// type
+import INavItem from "../../interfaces/INavItem";
+// utils
 import { navButtonClass } from "./utils";
-
 
 const HamburgerMenu: React.FC<{ navItems: INavItem[] }> = ({ navItems }) => {
   const { t } = useTranslation();

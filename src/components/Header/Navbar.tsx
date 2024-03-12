@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+// type
 import INavItem from "../../interfaces/INavItem";
+// utils
 import { navButtonClass } from "./utils";
 
 const Navbar: React.FC<{ navItems: INavItem[] }> = ({ navItems }) => {
