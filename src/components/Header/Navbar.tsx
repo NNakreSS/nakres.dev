@@ -9,7 +9,7 @@ const Navbar: React.FC<{ navItems: INavItem[] }> = ({ navItems }) => {
   const { t } = useTranslation();
 
   return (
-    <nav className="gap-5 items-center justify-between hidden lg:flex">
+    <nav className="gap-2 flex-row hidden lg:flex">
       {navItems.map((item, index) => (
         <NavLink key={index} to={item.path} className={navButtonClass}>
           {t(item.key)}
