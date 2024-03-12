@@ -6,6 +6,8 @@
   "contact": "Contact",
   "technologies": "Technologies",
   "services": "Services",
+  "contact-information": "Contact Information",
+  "copyright": "All rights reserved © 2024 NakreS Development",
   "pages": {
     "home": "Home",
     "articles": "Articles",
@@ -13,6 +15,24 @@
     "about": "About",
     "contact": "Contact"
   },
-  "contact-information": "Contact Information",
-  "copyright": "Copyright © 2024 NakreS Development. All rights reserved."
+  "my-services": {
+    "mobile": {
+      "description": "Customized mobile app solutions tailored to your business needs",
+      "title": "Mobile Application"
+    },
+    "web": {
+      "description": "Sustainable web solutions to increase your online visibility, custom web applications to streamline your business, and tailored solutions to enhance interaction with your customers",
+      "title": "Web Development"
+    },
+    "fivem": {
+      "description": "Strengthen your server with customized scripts for FiveM. Unique content for a fun and engaging gaming experience, solutions tailored to the needs of the FiveM community",
+      "title": "FiveM Script"
+    }
+  },
+  "expertise": {
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "mobile": "Mobile",
+    "game": "FiveM"
+  }
 }
