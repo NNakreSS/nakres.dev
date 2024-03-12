@@ -6,6 +6,9 @@ import LanguageDetector from "i18next-browser-languagedetector";
 i18n.use(initReactI18next).use(BackEnd).use(LanguageDetector).init({
   fallbackLng: "en",
   debug: false,
+  // backend: { // for test deployment root
+  //   loadPath: "vite/locales/{{lng}}/{{ns}}.json",
+  // },
 });
 
 export default i18n;
