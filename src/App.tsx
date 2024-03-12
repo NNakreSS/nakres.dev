@@ -24,7 +24,7 @@ const App = () => {
       )}
     >
       <Header />
-      <main className="flex-0 w-full flex flex-col gap-4 mt-10 gap-y-40 container mx-auto px-2 lg:px-20">
+      <main className="flex-0 w-full mt-10 container mx-auto px-2 lg:px-20">
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
