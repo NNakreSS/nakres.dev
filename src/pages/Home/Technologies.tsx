@@ -42,6 +42,7 @@ const Technologies = () => {
       ))}
     </article>
   );
+
   const marqueeView = (
     <article id="techMarquee">
       <Marquee className="w-full border-y-2 border-border py-5 box-content select-none">

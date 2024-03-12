@@ -41,3 +41,17 @@
     opacity: 0;
   }
 }
+
+/* layer mask */
+
+.horizontal-mask {
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+
+  mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
+}
