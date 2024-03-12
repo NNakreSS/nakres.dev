@@ -70,9 +70,6 @@ const Header = () => {
             onClick={toggleLanguage}
           >
             {darkMode ? <IoLanguage /> : <IoLanguage />}
-            <small className="select-none absolute top-[-5px] left-[30px] text-sm">
-              {i18n.language}
-            </small>
           </div>
         </div>
         {/* setting buttons end */}
