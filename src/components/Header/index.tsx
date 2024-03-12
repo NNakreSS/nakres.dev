@@ -1,6 +1,4 @@
 import { useState } from "react";
-// router
-import { NavLink } from "react-router-dom";
 // logo
 import white_logo from "../../assets/logo/nakres_logo_white.svg";
 import black_logo from "../../assets/logo/nakres_logo_black.svg";
@@ -13,20 +11,17 @@ import { themeSelector, toggleDarkMode } from "../../redux/slicers/themeSlice";
 import { useSelector, useDispatch } from "react-redux";
 // component
 import Slide from "../Slide";
-import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import Navbar from "./Navbar";
+import HamburgerMenu from "./HamburgerMenu";
 
-const navButtonClass = ({ isActive }: { isActive: boolean }) =>
-  classNames(
-    "bg-card/30 lg:bg-card/0 p-2 rounded-md w-full text-center font-semibold transition duration-300",
-    {
-      "text-warning !bg-card": isActive,
-    }
-  );
+export const navItems = [
+  { path: "/", key: "pages.home" },
+  { path: "/projects", key: "pages.projects" },
+  { path: "/articles", key: "pages.articles" },
+  { path: "/contact", key: "pages.contact" },
+];
 
 const Header = () => {
-  const { t } = useTranslation();
-
   const dispatch = useDispatch();
   const { darkMode } = useSelector(themeSelector);
   // hamburger menu status
@@ -48,20 +43,7 @@ const Header = () => {
         </div>
 
         {/* Large navbar */}
-        <nav className="gap-5 items-center justify-between  hidden lg:flex">
-          <NavLink to="/" className={navButtonClass}>
-            {t("pages.home")}
-          </NavLink>
-          <NavLink to="/projects" className={navButtonClass}>
-            {t("pages.projects")}
-          </NavLink>
-          <NavLink to="/articles" className={navButtonClass}>
-            {t("pages.articles")}
-          </NavLink>
-          <NavLink to="/contact" className={navButtonClass}>
-            {t("pages.contact")}
-          </NavLink>
-        </nav>
+        <Navbar navItems={navItems} />
         {/* Large navbar end*/}
 
         <div
@@ -84,20 +66,7 @@ const Header = () => {
       {/* hamburger menu */}
       <Slide isOpen={isOpen}>
         <div className="w-full z-20 py-5 px-2 lg:hidden container mx-auto ">
-          <nav className="gap-5 grid grid-cols-2  text-md w-full">
-            <NavLink to="/" className={navButtonClass}>
-              Anasayfa
-            </NavLink>
-            <NavLink to="/projects" className={navButtonClass}>
-              Projelerim
-            </NavLink>
-            <NavLink to="/articles" className={navButtonClass}>
-              Makaleler
-            </NavLink>
-            <NavLink to="/contact" className={navButtonClass}>
-              İletişim
-            </NavLink>
-          </nav>
+          <HamburgerMenu navItems={navItems} />
         </div>
       </Slide>
       {/* hamburger menu end */}
