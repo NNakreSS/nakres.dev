@@ -1,9 +1,10 @@
-import { t } from "i18next";
+import { useTranslation } from "react-i18next";
 import { ServiceCard } from "../../components/Card";
 
 const services = ["mobile", "web", "fivem"];
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <section id="services" className="text-text-main">
       <div className="flex mb-5">
