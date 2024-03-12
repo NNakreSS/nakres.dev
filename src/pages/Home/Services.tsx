@@ -16,7 +16,7 @@ const Services = () => {
             key={index}
             title={t(`my-services.${service}.title`)}
             description={t(`my-services.${service}.description`)}
-            className="w-full p-5  min-h-60 flex flex-col gap-10 justify-stretch shadow-inner shadow-black/20"
+            className="w-full p-5  min-h-60 flex flex-col gap-10 justify-stretch shadow-inner shadow-black/20 hover:scale-105 duration-500"
           />
         ))}
       </div>
