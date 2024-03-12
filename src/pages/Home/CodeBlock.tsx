@@ -1,12 +1,22 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const CodeBlock = () => {
-  const areasOfExpertise: string[] = ["FrontEnd", "BackEnd", "Mobile", "Game"];
+  const { t } = useTranslation();
+
+  const areasOfExpertise: string[] = [
+    t("expertise.frontend"),
+    t("expertise.backend"),
+    t("expertise.mobile"),
+    t("expertise.game"),
+  ];
+
   const [indexExpertise, setIndexExpertise] = useState<number>(0);
   const [text, setText] = useState<string>("");
   const [isDelete, setDelete] = useState<boolean>(false);
   const [deltaTime, setDeltaTime] = useState<number>(200);
 
+  // TODO typing animasyonu ayrı bir komponent olarak ele alınacak
   useEffect(() => {
     const tick = setInterval(() => {
       // textin tamamını al
@@ -50,13 +60,13 @@ const CodeBlock = () => {
       </div>
       <div className="text-2xl xl:text-4xl p-6 flex flex-wrap gap-5">
         <code className="font-bold text-text-second/50 w-full">
-          // Selam,ben Serkan
+          // {t("hello")}
         </code>
         <div className="font-semibold text-green-600 w-full">
           {"{ "}
           <span className="relative">{text}</span>
-          <span className="text-text-second anim_pulse">|</span>
-          <span> Developer</span>
+          <span className="text-text-second anim_pulse mr-3">|</span>
+          <span>{t("dev")}</span>
           {" }"}
         </div>
       </div>

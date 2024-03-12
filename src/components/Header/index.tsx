@@ -14,6 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 // component
 import Slide from "../Slide";
 import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
 const navButtonClass = ({ isActive }: { isActive: boolean }) =>
   classNames(
@@ -24,6 +25,8 @@ const navButtonClass = ({ isActive }: { isActive: boolean }) =>
   );
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const dispatch = useDispatch();
   const { darkMode } = useSelector(themeSelector);
   // hamburger menu status
@@ -47,16 +50,16 @@ const Header = () => {
         {/* Large navbar */}
         <nav className="gap-5 items-center justify-between  hidden lg:flex">
           <NavLink to="/" className={navButtonClass}>
-            Anasayfa
+            {t("pages.home")}
           </NavLink>
           <NavLink to="/projects" className={navButtonClass}>
-            Projelerim
+            {t("pages.projects")}
           </NavLink>
           <NavLink to="/articles" className={navButtonClass}>
-            Makaleler
+            {t("pages.articles")}
           </NavLink>
           <NavLink to="/contact" className={navButtonClass}>
-            İletişim
+            {t("pages.contact")}
           </NavLink>
         </nav>
         {/* Large navbar end*/}

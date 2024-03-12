@@ -1,0 +1,38 @@
+{
+  "hello": "Selam, ben Serkan",
+  "dev": "Geliştirici",
+  "contact-title": "Bir fikriniz mi var?",
+  "contact-description": "Hemen iletişime geçin, beraber gerçekleştirelim.",
+  "contact": "İletişim",
+  "technologies": "Teknolojiler",
+  "services": "Hizmetler",
+  "contact-information": "İletişim Bilgileri",
+  "copyright": "Tüm hakları saklıdır © 2024 NakreS Development",
+  "pages": {
+    "home": "Anasayfa",
+    "articles": "Makaleler",
+    "projects": "Projeler",
+    "about": "Hakkımda",
+    "contact": "İletişim"
+  },
+  "my-services": {
+    "mobile": {
+      "description": "İş ihtiyaçlarınıza uygun olarak özelleştirilmiş mobil uygulama çözümleri",
+      "title": "Mobil Uygulama"
+    },
+    "web": {
+      "description": "Sanal görünürlüğünüzü artırmak için sürdürülebilir web siteleri, işletmenizi rahatlatmak için özel web uygulamaları ve müşterilerinizle etkileşimi artırmak için özelleştirilmiş çözümler",
+      "title": "Web Geliştirme"
+    },
+    "fivem": {
+      "description": "FiveM için özelleştirilmiş scriptlerle sunucunuzu güçlendirin. Eğlenceli ve benzersiz oyun deneyimi için özgün içerikler, FiveM topluluğunun ihtiyaçlarına uygun çözümler",
+      "title": "FiveM Script"
+    }
+  },
+  "expertise": {
+    "frontend": "Front-End",
+    "backend": "Back-End",
+    "mobile": "Mobil",
+    "game": "Fivem"
+  }
+}

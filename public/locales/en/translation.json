@@ -1,0 +1,18 @@
+{
+  "hello": "Hello, I'm Serkan",
+  "dev": "Developer",
+  "contact-title": "Got an idea?",
+  "contact-description": "Get in touch, let's make it happen together.",
+  "contact": "Contact",
+  "technologies": "Technologies",
+  "services": "Services",
+  "pages": {
+    "home": "Home",
+    "articles": "Articles",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "contact-information": "Contact Information",
+  "copyright": "Copyright © 2024 NakreS Development. All rights reserved."
+}

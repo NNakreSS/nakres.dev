@@ -5,6 +5,7 @@ import { TechnologieCard } from "../../components/Card";
 // icons
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import Slide from "../../components/Slide";
+import { useTranslation } from "react-i18next";
 
 const myTechnologies = {
   html: "https://www.w3schools.com/html",
@@ -22,6 +23,7 @@ const myTechnologies = {
 };
 
 const Technologies = () => {
+  const { t } = useTranslation();
   const [isCardView, setIsCardView] = useState<boolean>(false);
   const toggleCardPreview = () => setIsCardView((prev) => !prev);
 
@@ -61,7 +63,9 @@ const Technologies = () => {
   return (
     <section id="technologies" className="text-text-main">
       <div className="flex items-center justify-start gap-5 mb-5">
-        <h3 className="text-2xl lg:text-4xl font-semibold">Teknolojiler</h3>
+        <h3 className="text-2xl lg:text-4xl font-semibold">
+          {t("technologies")}
+        </h3>
         {isCardView ? (
           <FaCaretUp
             onClick={toggleCardPreview}
