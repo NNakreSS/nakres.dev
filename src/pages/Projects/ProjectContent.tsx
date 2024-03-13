@@ -7,12 +7,14 @@ const ProjectContent: React.FC<any> = ({ lang, items }) => {
       {items.map((item: any, tkey: number) => {
         const project: IProject = item;
         const description = project.description;
-        <ProjectCard
-          project={project}
-          key={tkey}
-          lang={lang}
-          description={description}
-        />;
+        return (
+          <ProjectCard
+            project={project}
+            key={tkey}
+            lang={lang}
+            description={description}
+          />
+        );
       })}
     </div>
   );

@@ -2,8 +2,6 @@ import { useState } from "react";
 // interfaces
 import { ITab, ITabs } from "../../interfaces/ITab";
 import Tab from "./Tab";
-// framer motion
-// import { motion } from "framer-motion";
 
 const Tabs: React.FC<ITabs> = ({ data }) => {
   const [activeTab, setActiveTab] = useState<ITab>(data[0]);
