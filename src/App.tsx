@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import { useSelector } from "react-redux";
 import { themeSelector } from "./redux/slicers/themeSlice";
 import classNames from "classnames";
+import Projects from "./pages/Projects";
 
 const App = () => {
   const { darkMode } = useSelector(themeSelector);
@@ -27,6 +28,7 @@ const App = () => {
       <main className="flex-0 w-full mt-10 container mx-auto px-2 lg:px-20">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </main>
       <Footer />

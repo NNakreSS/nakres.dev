@@ -10,7 +10,11 @@ const CallToAction = () => {
       <p className="w-full text-center text-xl text-text-second">
         {t("contact-description")}
       </p>
-      <Button type="primary" variant="outlined">
+      <Button
+        type="primary"
+        variant="outlined"
+        className="active:scale-110 duration-100"
+      >
         {t("contact")}
       </Button>
     </div>
