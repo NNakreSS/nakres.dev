@@ -6,12 +6,12 @@ import { ITab } from "../../interfaces/ITab";
 import { motion } from "framer-motion";
 
 interface ITabProps extends IProps {
-  activeTab: string;
+  activeTabLabel: string;
   setActiveTab: (tab: ITab) => void;
   tabs: ITab[];
 }
 
-const Tab: React.FC<ITabProps> = ({ activeTab, setActiveTab, tabs }) => {
+const Tab: React.FC<ITabProps> = ({ activeTabLabel, setActiveTab, tabs }) => {
   return (
     <div
       id="tab"
@@ -23,7 +23,7 @@ const Tab: React.FC<ITabProps> = ({ activeTab, setActiveTab, tabs }) => {
           onClick={() => setActiveTab(item)}
           className="p-1 px-2 relative w-full"
         >
-          {activeTab == item.id && (
+          {activeTabLabel == item.label && (
             <motion.div
               transition={{ type: "spring", duration: 1 }}
               layoutId="active-pill"
