@@ -55,3 +55,19 @@
 
   mask: linear-gradient(90deg, transparent, white 30%, white 70%, transparent);
 }
+
+/* dropdown arrow */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  rotate: 45deg;
+  top: -11.4px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+}

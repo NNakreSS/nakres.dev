@@ -82,7 +82,7 @@ const Settings = () => {
         <div
           ref={languageDropBoxRef}
           className={classNames(
-            "flex justify-center items-center bg-card p-2 px-10 rounded-md text-2xl font-semibold dropdownMenu border-text-main border-2 absolute -left-10 top-10 transition duration-1000",
+            "flex justify-center items-center bg-card p-5 px-10 rounded-md text-2xl font-semibold dropdown before:bg-card before:border-text-main before:border-t-2 before:border-l-2 border-text-main border-2 absolute -left-10 top-12 transition duration-1000",
             { "opacity-0": !isDrop }
           )}
         >
@@ -91,7 +91,7 @@ const Settings = () => {
               {languages.map((lang: string) => (
                 <li
                   key={lang}
-                  className={classNames("hover:text-primary", {
+                  className={classNames({
                     "text-warning": i18n.language.startsWith(lang),
                   })}
                   onClick={() => toggleLanguage(lang)}
