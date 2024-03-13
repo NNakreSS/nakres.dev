@@ -25,6 +25,7 @@ const Tab: React.FC<ITabProps> = ({ activeTab, setActiveTab, tabs }) => {
         >
           {activeTab == item.id && (
             <motion.div
+              transition={{ type: "spring", duration: 1 }}
               layoutId="active-pill"
               className="bg-background absolute inset-0 rounded-md"
             />
