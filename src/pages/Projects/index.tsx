@@ -2,21 +2,11 @@
 import { motion } from "framer-motion";
 // components
 import Tabs from "../../components/Tabs";
-import { ITab } from "../../interfaces/ITab";
 
-const tabs: ITab[] = [
-  {
-    id: "tab1",
-    label: "Fivem",
-  },
-  {
-    id: "tab2",
-    label: "Web",
-  },
-  {
-    id: "tab3",
-    label: "Mobile",
-  },
+const tabs = [
+  { id: "Fivem", label: "Fivem" },
+  { id: "Mobile", label: "Mobile" },
+  { id: "Web", label: "Web" },
 ];
 
 const Projects = () => (

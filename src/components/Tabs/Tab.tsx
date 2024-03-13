@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 interface ITabProps extends IProps {
   activeTab: string;
-  setActiveTab: (id: string) => void;
+  setActiveTab: (tab: ITab) => void;
   tabs: ITab[];
 }
 
@@ -15,13 +15,13 @@ const Tab: React.FC<ITabProps> = ({ activeTab, setActiveTab, tabs }) => {
   return (
     <div
       id="tab"
-      className="text-md relative p-2 px-5 bg-card rounded-md shadow-md shadow-black/50 flex flex-row gap-4"
+      className="text-md relative p-2 px-5 bg-card rounded-md shadow-md shadow-black/50 flex justify-center flex-row gap-4 w-full md:w-10/12 lg:w-6/12 mx-auto"
     >
       {tabs.map((item, index) => (
         <button
           key={index}
-          onClick={() => setActiveTab(item.id)}
-          className="p-1 px-2 relative min-w-20"
+          onClick={() => setActiveTab(item)}
+          className="p-1 px-2 relative w-full"
         >
           {activeTab == item.id && (
             <motion.div

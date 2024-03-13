@@ -13,17 +13,16 @@ import Projects from "./pages/Projects";
 
 const App = () => {
   const { darkMode } = useSelector(themeSelector);
+  const className = classNames(
+    "bg-background min-h-screen min-w-full flex flex-col transition duration-300 ease-linear",
+    {
+      light: !darkMode,
+      dark: darkMode,
+    }
+  );
 
   return (
-    <div
-      className={classNames(
-        "bg-background min-h-screen min-w-full flex flex-col transition duration-300 ease-linear",
-        {
-          light: !darkMode,
-          dark: darkMode,
-        }
-      )}
-    >
+    <div className={className}>
       <Header />
       <main className="flex-0 w-full mt-10 container mx-auto px-2 lg:px-20">
         <Routes>
