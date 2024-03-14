@@ -2,6 +2,8 @@ import IProject from "../../interfaces/IProject";
 // icons
 import { FaGithub, FaYoutube, FaStore } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
+// framer motion
+import { motion } from "framer-motion";
 
 const typeOfIcon: { [key: string]: JSX.Element } = {
   github: <FaGithub />,
@@ -10,13 +12,28 @@ const typeOfIcon: { [key: string]: JSX.Element } = {
   store: <FaStore />,
 };
 
+const animItem = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 const ProjectCard: React.FC<{
   project: IProject;
   lang: string;
   description: any;
 }> = ({ project, description, lang }) => {
   return (
-    <div className="bg-card p-4 rounded-md shadow-inner shadow-black/30 transition hover:scale-[1.02] duration-300 flex flex-col justify-between">
+    <motion.div
+      variants={animItem}
+      transition={{ duration: 0.5 }}
+      className="bg-card p-4 rounded-md shadow-inner shadow-black/30 flex flex-col justify-between"
+    >
       <div className="flex items-center justify-between">
         <h4 className="text-lg font-semibold">{project.title}</h4>
         <div className="flex gap-2 text-2xl">
@@ -51,7 +68,7 @@ const ProjectCard: React.FC<{
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
