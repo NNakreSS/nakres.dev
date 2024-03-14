@@ -24,6 +24,28 @@
   --text-second: 107, 114, 128;
   --primary: 59, 130, 246;
   --secondary: 139, 92, 246;
-  --warning: 251, 191, 36;
+  --warning: 255, 165, 0;
   --danger: 219, 39, 119;
 }
+
+/* scroll bar  */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Scroll bar track (kaydırma çubuğunun arka planı) */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Scroll bar grip (kaydırma çubuğu gövdesi) */
+html:has(.dark) ::-webkit-scrollbar-thumb {
+  background: rgb(234, 179, 8);
+  border-radius: 4px;
+}
+/* scroll bar end */
+html:has(.light) ::-webkit-scrollbar-thumb {
+  background: rgb(255, 165, 0);
+  border-radius: 4px;
+}
+/* scroll bar end */

@@ -1,21 +1,3 @@
-/* scroll bar  */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Scroll bar track (kaydırma çubuğunun arka planı) */
-::-webkit-scrollbar-track {
-  background: #202020;
-}
-
-/* Scroll bar grip (kaydırma çubuğu gövdesi) */
-::-webkit-scrollbar-thumb {
-  background: #fbbf24;
-  border-radius: 4px;
-}
-
-/* scroll bar end */
-
 .marquee {
   animation: scrollX 25s linear infinite;
 }
