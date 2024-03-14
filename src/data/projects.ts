@@ -20,6 +20,25 @@ export const projects = {
       ],
     },
     {
+      title: "Url Shortener",
+      img: "https://media.discordapp.net/attachments/933994040851071026/1217844552308887603/s.png?ex=6605811f&is=65f30c1f&hm=dd0e5b4d19cc37dc09b6fce100e4554f6641bd04dad6f9e50c314dc7a201595f&=&format=webp&quality=lossless&width=600&height=437",
+      description: {
+        en: "Bu proje, URL'leri kısaltabilen ve kısaltılan URL'leri yönetebilen bir PHP uygulamasını içerir. Ayrıca, bir üyelik sistemi ve yönetici paneli içerir.",
+        tr: "This project includes a PHP application that can shorten URLs and manage the shortened URLs. It also features a membership system and an admin panel.",
+      },
+      stack: ["HTML", "CSS", "JS", "PHP"],
+      links: [
+        {
+          type: "github",
+          link: "https://github.com/NNakreSS/nakres_url_shorter",
+        },
+        {
+          type: "demo",
+          link: "https://link.nakres.dev",
+        },
+      ],
+    },
+    {
       title: "Turkish Checkers",
       img: "https://media.discordapp.net/attachments/933994040851071026/1217606766314000488/302338331-ffbc5d35-7516-4d92-943f-982761bafd5e.png?ex=6604a3ab&is=65f22eab&hm=9950ccdc0240c9ab03f84f9d07c693d9bd6e191623e3447f89292a3bd1200256&=&format=webp&quality=lossless&width=687&height=340",
       description: {
@@ -157,6 +176,21 @@ export const projects = {
       ],
     },
     {
+      title: "Video Call",
+      img: "https://media.discordapp.net/attachments/933994040851071026/1217843147615502486/a.png?ex=66057fd0&is=65f30ad0&hm=9095fb3479cfa41358f2ee6b46459f45877b87f5805ba97c9e867fcc37b3aa00&=&format=webp&quality=lossless&width=687&height=370",
+      description: {
+        tr: "Telefonunuza entegre ederek oyun içerisinde kullanabileceğiniz bir görüntülü konuşma özelliği sunar. (qb-phone için default örnek mevcut)",
+        en: "Offers a video call feature that you can integrate into your phone and use within the game. (Default example available for qb-phone)",
+      },
+      stack: ["HTML", "CSS", "JS", "Web RTC", "LUA"],
+      links: [
+        {
+          type: "github",
+          link: "https://github.com/NNakreSS/VideoCall",
+        },
+      ],
+    },
+    {
       title: "Taxi Job",
       img: "https://media.discordapp.net/attachments/1043308209642946641/1043308821659000852/pp.PNG?ex=65fe160e&is=65eba10e&hm=e2d322cbbf8336afb0c5282e1d9d96e708aac77e60159f4f4f2cdaac09c3cf6d&=&format=webp&quality=lossless&width=870&height=701",
       description: {
@@ -191,6 +225,59 @@ export const projects = {
         {
           type: "store",
           link: "https://nakres-development.tebex.io/package/5895153",
+        },
+      ],
+    },
+    {
+      title: "Zone Creator",
+      img: "https://media.discordapp.net/attachments/933994040851071026/1217838733886226442/s.png?ex=66057bb4&is=65f306b4&hm=3ac27dee51ebf0c90d87e53fe57b9e2c8c9a3a8707c58ef4d7ff5ec3f97ab5f4&=&format=webp&quality=lossless&width=1246&height=701",
+      description: {
+        tr: "Zone komut dosyasını kullanarak çoklu bölgelerin daha kolay oluşturulmasını sağlayan bir komut dosyası aracı.(PolyZone veya ox.lib zone).",
+        en: "A script tool that facilitates easier creation of polyzones using the Zone script (PolyZone or ox.lib zone).",
+      },
+      stack: ["React.js", "TypeScript", "LUA"],
+      links: [
+        {
+          type: "github",
+          link: "https://github.com/NNakreSS/polyZoneCreator",
+        },
+      ],
+    },
+    {
+      title: "Lightbar",
+      img: "https://media.discordapp.net/attachments/1048030623903784970/1048030912807448586/unknown.png?ex=65fcced9&is=65ea59d9&hm=e6e51abfbded6edef6f6351215939df3db17b94b7a307706244c32b60a8da04f&=&format=webp&quality=lossless&width=687&height=378",
+      description: {
+        tr: "Araçlara çakar ekleyip kullanmanızı ve onları kaydetmenizi sağlayan gelişmiş lightbar scripti.",
+        en: "Add lightbar to vehicles, manage them, manage lights and sounds.",
+      },
+      stack: ["HTML", "CSS", "JS", "LUA"],
+      links: [
+        {
+          type: "github",
+          link: "https://github.com/NNakreSS/Fivem-Lightbar",
+        },
+        {
+          type: "youtube",
+          link: "https://www.youtube.com/watch?v=_55viear_LE",
+        },
+      ],
+    },
+    {
+      title: "Barbecue",
+      img: "https://media.discordapp.net/attachments/933994040851071026/1217842808744837130/a.png?ex=66057f80&is=65f30a80&hm=14c1f0ba408bec7d47440765f474bae85c1659801246eaf8b27bf174c235ec04&=&format=webp&quality=lossless&width=687&height=287",
+      description: {
+        tr: "Bu script, FiveM platformunda kullanılmak üzere geliştirilmiş bir BBQ satış sistemini içerir. Bu sistem, oyuncuların barbekü objeleri oluşturmasına, işlerini yönetmelerine ve çevredeki NPC'lerden sipariş alarak yiyecek satmalarına olanak tanır.",
+        en: "This script contains an advanced BBQ sales system developed for use on the FiveM platform. This system allows players to create barbecue objects, manage their business, and sell food by taking orders from nearby NPCs.",
+      },
+      stack: ["HTML", "CSS", "JS", "LUA"],
+      links: [
+        {
+          type: "github",
+          link: "https://github.com/NNakreSS/nakres_barbecue",
+        },
+        {
+          type: "youtube",
+          link: "https://www.youtube.com/watch?v=_akblmM_ySo",
         },
       ],
     },
