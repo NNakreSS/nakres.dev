@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Articles = () => (
   <motion.div
-    className="flex flex-col gap-4 gap-y-40"
+    className="flex flex-col gap-4 gap-y-40 min-h-[55vh]"
     initial={{ opacity: 0, translateY: 100 }}
     animate={{ opacity: 1, translateY: 0 }}
   >
