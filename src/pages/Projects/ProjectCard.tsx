@@ -58,11 +58,11 @@ const ProjectCard: React.FC<{
           {description[lang]}
         </p>
       </div>
-      <div className="flex flex-wrap items-center justify-start gap-5 border-t-[1px] border-text-main/50 border-solid mt-2 pt-4">
+      <div className="flex flex-wrap items-center justify-start gap-x-1 gap-y-2 border-t-[1px] border-text-main/50 border-solid mt-2 pt-4">
         {project.stack.map((stack: any, _key: number) => (
           <span
             key={_key}
-            className="text-xs p-1 border-warning/50 text-warning border-2 rounded-full min-w-20 flex items-center justify-center"
+            className="text-xs font-mono font-thin px-1 border-warning/70 text-warning border-[1px] rounded-full min-w-20 flex items-center justify-center"
           >
             {stack}
           </span>
