@@ -1,15 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import classNames from "classnames";
 // components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 // pages
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import Projects from "./pages/Projects";
+import Articles from "./pages/Articles";
 // redux
 import { useSelector } from "react-redux";
 import { themeSelector } from "./redux/slicers/themeSlice";
-import classNames from "classnames";
-import Projects from "./pages/Projects";
 
 const App = () => {
   const { darkMode } = useSelector(themeSelector);
@@ -28,6 +29,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/articles" element={<Articles />} />
         </Routes>
       </main>
       <Footer />
