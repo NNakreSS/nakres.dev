@@ -27,13 +27,17 @@ const ProjectCard: React.FC<{
           ))}
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-2 items-center py-5">
+      <div className="flex flex-col md:flex-row gap-5 py-5 h-full">
         {project?.img && (
-          <div className="w-9/12 rounded-md overflow-hidden shadow-md">
-            <img src={project?.img} alt={project.title} />
+          <div className="w-9/12 h-full rounded-md overflow-hidden shadow-md mx-auto">
+            <img
+              src={project?.img}
+              alt={project.title}
+              className="w-full h-full"
+            />
           </div>
         )}
-        <p className="w-full text-center text-xl text-text-second">
+        <p className="w-full text-start text-xl text-text-main/80">
           {description[lang]}
         </p>
       </div>
