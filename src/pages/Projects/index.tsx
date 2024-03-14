@@ -6,6 +6,7 @@ import { projects } from "../../data/projects";
 // components
 import Tabs from "../../components/Tabs";
 import ProjectContent from "./ProjectContent";
+import Button from "../../components/Button";
 
 const getTabsData = (lang: string) =>
   Object.entries(projects).map(([category, items]) => {
@@ -16,7 +17,7 @@ const getTabsData = (lang: string) =>
   });
 
 const Projects = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const lang = i18n.language.split("-")[0];
   const [tabsData, setTabsData] = useState(getTabsData(lang));
 
@@ -25,7 +26,17 @@ const Projects = () => {
   }, [lang]);
 
   return (
-    <div className="flex flex-col gap-4 gap-y-40">
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center justify-between">
+        <h1 className="text-text-main text-4xl font-semibold">
+          {t("pages.projects").toUpperCase()}
+        </h1>
+        <a target="_blank" href="https://github.com/NNakreSS">
+          <Button variant="text" type="primary" className="w-auto p-0">
+            GitHub
+          </Button>
+        </a>
+      </div>
       <Tabs data={tabsData} />
     </div>
   );
