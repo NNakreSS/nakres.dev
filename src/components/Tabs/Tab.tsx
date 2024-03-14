@@ -15,24 +15,22 @@ const Tab: React.FC<ITabProps> = ({ activeTabLabel, setActiveTab, tabs }) => {
   return (
     <div
       id="tab"
-      className="text-md relative p-2 px-5 bg-card rounded-md shadow-md shadow-black/50 flex justify-center flex-row gap-4 w-full md:w-10/12 lg:w-6/12 mx-auto"
+      className="text-md p-2 bg-card rounded-md shadow-md shadow-black/50 flex gap-4 w-full md:w-10/12 lg:w-6/12 mx-auto"
     >
       {tabs.map((item, index) => (
         <button
           key={index}
           onClick={() => setActiveTab(item)}
-          className="p-1 px-2 relative w-full"
+          className="p-1 relative w-full font-semibold hover:bg-background/20 rounded-md transition duration-200"
         >
           {activeTabLabel == item.label && (
             <motion.div
-              transition={{ type: "spring", duration: 1 }}
+              transition={{ type: "spring", duration: 0.8 }}
               layoutId="active-pill"
-              className="bg-background absolute inset-0 rounded-md"
+              className="absolute bg-background inset-0 rounded-md"
             />
           )}
-          <span className="relative font-semibold hover:text-text-main/50 transition duration-200">
-            {item.label}
-          </span>
+          <span className="relative">{item.label}</span>
         </button>
       ))}
     </div>
