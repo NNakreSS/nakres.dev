@@ -9,10 +9,34 @@ import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { themeSelector, toggleDarkMode } from "../../redux/slicers/themeSlice";
 // component
-import Slide from "../Slide";
+import { AnimatePresence, motion } from "framer-motion";
 
 // languages folder name
 const languages = ["tr", "en"];
+
+//animate
+const menuVariant = {
+  initial: {
+    scaleY: 0,
+    opacity: 0,
+  },
+  animate: {
+    scaleY: 1,
+    opacity: 1,
+    transition: {
+      duration: 0.2,
+      ease: [0.12, 0, 0.39, 0],
+    },
+  },
+  exit: {
+    scaleY: 0,
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+      ease: [0.22, 0, 0.36, 1],
+    },
+  },
+};
 
 const Settings = () => {
   // localization
@@ -30,14 +54,9 @@ const Settings = () => {
   // toggle dark mode button action
   const toggleMode = () => dispatch(toggleDarkMode());
   // toggle language button action
-  const toggleLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-  };
+  const toggleLanguage = (lang: string) => i18n.changeLanguage(lang);
   // toggle language dropdown menu action
-  const setDropLanguageMenu = (drop: boolean) => {
-    console.log(drop);
-    setIsDrop(drop);
-  };
+  const setDropLanguageMenu = (drop: boolean) => setIsDrop(drop);
 
   // window click listener handle
   const clickHandleWindows = (e: any) => {
@@ -78,31 +97,35 @@ const Settings = () => {
           </span>
         </div>
         {/* language dropdown */}
-
-        <div
-          ref={languageDropBoxRef}
-          className={classNames(
-            "flex justify-center items-center bg-card p-5 px-10 rounded-md text-2xl font-semibold dropdown before:bg-card before:border-text-main before:border-t-2 before:border-l-2 border-text-main border-2 absolute -left-10 top-12 transition duration-1000",
-            { "opacity-0": !isDrop }
+        <AnimatePresence>
+          {isDrop && (
+            <motion.div
+              variants={menuVariant}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              ref={languageDropBoxRef}
+              className={classNames(
+                "flex justify-center items-center bg-card p-5 px-10 rounded-md text-2xl font-semibold dropdown before:bg-card before:border-text-main before:border-t-2 before:border-l-2 border-text-main border-2 absolute -left-10 top-12 origin-top",
+                { "opacity-0": !isDrop }
+              )}
+            >
+              <ul className="flex flex-col gap-2">
+                {languages.map((lang: string) => (
+                  <li
+                    key={lang}
+                    className={classNames({
+                      "text-warning": i18n.language.startsWith(lang),
+                    })}
+                    onClick={() => toggleLanguage(lang)}
+                  >
+                    {lang.toUpperCase()}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
           )}
-        >
-          <Slide isOpen={isDrop}>
-            <ul className="flex flex-col gap-2">
-              {languages.map((lang: string) => (
-                <li
-                  key={lang}
-                  className={classNames({
-                    "text-warning": i18n.language.startsWith(lang),
-                  })}
-                  onClick={() => toggleLanguage(lang)}
-                >
-                  {lang.toUpperCase()}
-                </li>
-              ))}
-            </ul>
-          </Slide>
-        </div>
-
+        </AnimatePresence>
         {/* language dropdown end */}
       </div>
       {/* language button  end*/}
