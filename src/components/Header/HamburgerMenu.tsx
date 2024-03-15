@@ -11,7 +11,7 @@ const HamburgerMenu: React.FC<{ navItems: INavItem[] }> = ({ navItems }) => {
   const { t } = useTranslation();
 
   return (
-    <nav className="gap-5 grid grid-cols-2 text-md w-full">
+    <nav className="gap-2 grid grid-cols-2 text-md w-full">
       {navItems.map((item, index) => (
         <NavLink key={index} to={item.path} className={navButtonClass}>
           {t(item.key)}
