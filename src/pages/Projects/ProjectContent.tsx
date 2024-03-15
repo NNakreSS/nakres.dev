@@ -17,7 +17,7 @@ const ProjectContent: React.FC<any> = ({ lang, items }) => {
       initial="hidden"
       animate="visible"
       variants={animContainer}
-      className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-5 w-full"
     >
       {items.map((item: any, tkey: number) => {
         const project: IProject = item;
