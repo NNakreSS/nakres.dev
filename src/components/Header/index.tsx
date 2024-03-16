@@ -14,13 +14,6 @@ import Navbar from "./Navbar";
 import HamburgerMenu from "./HamburgerMenu";
 import Settings from "./Settings";
 
-export const navItems = [
-  { path: "/", key: "pages.home" },
-  { path: "/projects", key: "pages.projects" },
-  { path: "/articles", key: "pages.articles" },
-  { path: "/contact", key: "pages.contact" },
-];
-
 const Header = () => {
   const { darkMode } = useSelector(themeSelector);
   // hamburger menu status
@@ -42,7 +35,7 @@ const Header = () => {
         {/* logo end */}
 
         {/* Large navbar */}
-        <Navbar navItems={navItems} />
+        <Navbar />
         {/* Large navbar end*/}
 
         {/* setting buttons */}
@@ -61,7 +54,7 @@ const Header = () => {
       {/* hamburger menu */}
       <Slide isOpen={isOpen}>
         <div className="w-full z-20 py-5 px-2 lg:hidden container mx-auto ">
-          <HamburgerMenu navItems={navItems} />
+          <HamburgerMenu />
         </div>
       </Slide>
       {/* hamburger menu end */}
