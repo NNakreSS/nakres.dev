@@ -8,10 +8,9 @@ import classNames from "classnames";
 
 const Navbar: React.FC<{ navItems: INavItem[] }> = ({ navItems }) => {
   const { t } = useTranslation();
-  const gridColumsTemplate = `grid-cols-[repeat(${navItems.length},1fr)]`;
 
   return (
-    <nav className={classNames("gap-2 hidden lg:grid", gridColumsTemplate)}>
+    <nav className="gap-2 hidden grid-cols-4 lg:grid">
       {navItems.map((item, index) => (
         <NavLink key={index} to={item.path} className={navButtonClass}>
           {t(item.key)}
