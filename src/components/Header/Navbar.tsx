@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import INavItem from "../../interfaces/INavItem";
 // utils
 import { navButtonClass } from "./utils";
-import classNames from "classnames";
 
 const Navbar: React.FC<{ navItems: INavItem[] }> = ({ navItems }) => {
   const { t } = useTranslation();
