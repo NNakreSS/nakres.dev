@@ -1,5 +1,5 @@
 .marquee {
-  animation: scrollX 25s linear infinite;
+  animation: scrollX 60s linear infinite;
 }
 
 .anim_pulse {
