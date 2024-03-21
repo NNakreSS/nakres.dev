@@ -1,5 +1,5 @@
 import React from "react";
-// interfaves
+// interfaces
 import IProps from "../../interfaces/IProps";
 import { ITab } from "../../interfaces/ITab";
 // framer motion
@@ -17,20 +17,19 @@ const Tab: React.FC<ITabProps> = ({ activeTabLabel, setActiveTab, tabs }) => {
       id="tab"
       className="text-md p-2 bg-card rounded-md shadow-md shadow-black/50 flex gap-4 w-full md:w-10/12 lg:w-6/12 mx-auto"
     >
-      {tabs.map((item, index) => (
+      {tabs.map((tab, index) => (
         <button
           key={index}
-          onClick={() => setActiveTab(item)}
+          onClick={() => setActiveTab(tab)}
           className="p-1 relative w-full font-semibold hover:bg-background/20 rounded-md transition duration-200"
         >
-          {activeTabLabel == item.label && (
+          {activeTabLabel == tab.label && (
             <motion.div
-              transition={{ type: "spring", duration: 0.8 }}
               layoutId="active-pill"
               className="absolute bg-background inset-0 rounded-md"
             />
           )}
-          <span className="relative">{item.label}</span>
+          <span className="relative z-10">{tab.label}</span>
         </button>
       ))}
     </div>

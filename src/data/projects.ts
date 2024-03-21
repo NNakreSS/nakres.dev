@@ -137,7 +137,7 @@ export const projects = {
   mobile: [
     {
       title: "Space Voyage",
-      img: "https://private-user-images.githubusercontent.com/87872407/311020273-1098b591-8475-4181-9211-ebca7da10999.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAzNzEwNDksIm5iZiI6MTcxMDM3MDc0OSwicGF0aCI6Ii84Nzg3MjQwNy8zMTEwMjAyNzMtMTA5OGI1OTEtODQ3NS00MTgxLTkyMTEtZWJjYTdkYTEwOTk5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzEzVDIyNTkwOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMxNmUxNWVjMDVlZmEzZjYzNzcxY2RlYmVlMzM5ZjZlMTE0NzY2OWFiNWQ2MDdjMzM0NTJkMzM4ZWNmZDUxYTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.lmkW9aW9djGNaVzkZEgveFAQ3x8cTafrZuYeYLAna_U",
+      img: "https://media.discordapp.net/attachments/933994040851071026/1220499181710606406/311020273-1098b591-8475-4181-9211-ebca7da10999.png?ex=660f2970&is=65fcb470&hm=86a790358fce65964306ae2e680a5d0de1595871f0530fe538308549af622e50&=&format=webp&quality=lossless&width=687&height=386",
       description: {
         tr: "Kodluyoruz ekibinin düzenlediği Hi-kod 2.0 mobil uygulama atölyesinde birincilik ödülünü kazandı!",
         en: "It won the first prize in the Hi-code 2.0 mobile application workshop organized by the Kodluyoruz team!",
