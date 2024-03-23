@@ -11,8 +11,8 @@ const ServiceCard: React.FC<IServiceCard> = ({
 }): ReactNode => {
   return (
     <div className={classNames(className, "bg-card rounded-md")}>
-      <h4 className="text-center text-2xl lg:text-3xl">{title}</h4>
       {Image && <Image className="w-28 h-auto mx-auto fill-text-main" />}
+      <h4 className="text-center text-2xl lg:text-3xl">{title}</h4>
       <p className="text-center text-text-main/90 text-md">{description}</p>
     </div>
   );
