@@ -8,6 +8,10 @@
   "services": "Services",
   "contact-information": "Contact Information",
   "copyright": "All rights reserved © 2024 NakreS Development",
+  "name": "Name",
+  "email": "Email",
+  "send": "Send",
+  "message": "Message",
   "pages": {
     "home": "Home",
     "articles": "Articles",

@@ -8,6 +8,10 @@
   "services": "Hizmetler",
   "contact-information": "İletişim Bilgileri",
   "copyright": "Tüm hakları saklıdır © 2024 NakreS Development",
+  "name": "İsim",
+  "email": "Email",
+  "send": "Gönder",
+  "message": "Mesaj",
   "pages": {
     "home": "Anasayfa",
     "articles": "Makaleler",
