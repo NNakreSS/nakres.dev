@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   const { t } = useTranslation();
@@ -10,13 +11,15 @@ const CallToAction = () => {
       <p className="w-full text-center text-xl text-text-second">
         {t("contact-description")}
       </p>
-      <Button
-        type="primary"
-        variant="outlined"
-        className="active:scale-110 duration-100"
-      >
-        {t("contact")}
-      </Button>
+      <Link to="/contact" className="w-6/12">
+        <Button
+          type="primary"
+          variant="outlined"
+          className="active:scale-110 duration-100 w-full"
+        >
+          {t("contact")}
+        </Button>
+      </Link>
     </div>
   );
 };
