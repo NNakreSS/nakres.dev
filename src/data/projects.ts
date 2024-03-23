@@ -23,8 +23,8 @@ export const projects = {
       title: "Url Shortener",
       img: "https://media.discordapp.net/attachments/933994040851071026/1217844552308887603/s.png?ex=6605811f&is=65f30c1f&hm=dd0e5b4d19cc37dc09b6fce100e4554f6641bd04dad6f9e50c314dc7a201595f&=&format=webp&quality=lossless&width=600&height=437",
       description: {
-        en: "Bu proje, URL'leri kısaltabilen ve kısaltılan URL'leri yönetebilen bir PHP uygulamasını içerir. Ayrıca, bir üyelik sistemi ve yönetici paneli içerir.",
-        tr: "This project includes a PHP application that can shorten URLs and manage the shortened URLs. It also features a membership system and an admin panel.",
+        tr: "Bu proje, URL'leri kısaltabilen ve kısaltılan URL'leri yönetebilen bir PHP uygulamasını içerir. Ayrıca, bir üyelik sistemi ve yönetici paneli içerir.",
+        en: "This project includes a PHP application that can shorten URLs and manage the shortened URLs. It also features a membership system and an admin panel.",
       },
       stack: ["HTML", "CSS", "JS", "PHP"],
       links: [
