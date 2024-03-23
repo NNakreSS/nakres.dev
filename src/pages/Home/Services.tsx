@@ -1,7 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { ServiceCard } from "../../components/Card";
+// icons
+import { WebIcon, GameIcon, MobileIcon } from "../../pages/Home/ServiceIcons";
 
 const services = ["mobile", "web", "fivem"];
+const icons: any = {
+  web: WebIcon,
+  mobile: MobileIcon,
+  fivem: GameIcon,
+};
 
 const Services = () => {
   const { t } = useTranslation();
@@ -13,6 +20,7 @@ const Services = () => {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
         {services.map((service, index) => (
           <ServiceCard
+            Image={icons[service]}
             key={index}
             title={t(`my-services.${service}.title`)}
             description={t(`my-services.${service}.description`)}
