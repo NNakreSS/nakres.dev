@@ -1,19 +1,17 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import Article from "../../interfaces/IArticle";
+// import Article from "../../interfaces/IArticle";
 
 interface ArticlesState {
-  articles: Article[];
+  articles: [];
   loading: boolean;
   error: string | null;
 }
 
-export const fetchArticles = createAsyncThunk<Article[]>(
+export const fetchArticles = createAsyncThunk(
   "articles/fetchArticles",
   async () => {
-    const { data } = await axios.get<Article[]>(
-      import.meta.env.VITE_MEDIUM_URL
-    );
+    const { data } = await axios.get(import.meta.env.VITE_MEDIUM_URL);
     return data;
   }
 );
@@ -32,13 +30,16 @@ const articlesSlice = createSlice({
     builder
       .addCase(fetchArticles.pending, (state) => {
         state.loading = true;
+        state.error = null;
       })
       .addCase(fetchArticles.fulfilled, (state, action) => {
-        state.articles = action.payload;
+        state.articles = action.payload.items;
         state.loading = false;
+        state.error = null;
       })
       .addCase(fetchArticles.rejected, (state) => {
         state.loading = false;
+        state.error = "Something went wrong";
       });
   },
 });
