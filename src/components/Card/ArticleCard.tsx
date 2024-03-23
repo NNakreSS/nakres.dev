@@ -4,11 +4,27 @@ import classNames from "classnames";
 import Article from "../../interfaces/IArticle";
 //icons
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const animItem = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const ArticleCard: React.FC<any> = ({ article, className }): ReactNode => {
   const Article = article as Article;
   return (
-    <div className={classNames(className, "bg-card rounded-md text-text-main")}>
+    <motion.div
+      variants={animItem}
+      transition={{ duration: 0.5 }}
+      className={classNames(className, "bg-card rounded-md text-text-main")}
+    >
       <div className="flex justify-between">
         <span className="text-sm text-text-main/60">{Article.pubDate}</span>
         <a
@@ -32,7 +48,7 @@ const ArticleCard: React.FC<any> = ({ article, className }): ReactNode => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
