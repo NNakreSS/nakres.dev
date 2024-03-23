@@ -52,11 +52,11 @@ const ProjectCard: React.FC<{
           <img
             src={project?.img}
             alt={project.title}
-            className="object-cover md:h-52 w-6/12 rounded-md"
+            className="object-cover md:h-52 w-full md:w-6/12 rounded-md"
           />
         )}
 
-        <p className="w-6/12 text-start text-xl  text-text-main/80">
+        <p className="w-full md:w-6/12 text-start text-xl  text-text-main/80">
           {description[lang]}
         </p>
       </div>
