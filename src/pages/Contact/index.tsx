@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
+import axios from "axios";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -21,9 +22,30 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    await axios.post(import.meta.env.VITE_CONTACT_WEBHOOK, {
+      embeds: [
+        {
+          title: "Yeni İletişim Formu",
+          color: 0x00ff00, // Renk kodu (Yeşil)
+          fields: [
+            {
+              name: "Ad",
+              value: formData.name,
+            },
+            {
+              name: "E-posta",
+              value: formData.email,
+            },
+            {
+              name: "Mesaj",
+              value: formData.message,
+            },
+          ],
+        },
+      ],
+    });
     setFormData({
       name: "",
       email: "",
