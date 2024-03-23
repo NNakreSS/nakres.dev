@@ -22,7 +22,7 @@ const Header = () => {
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
   return (
-    <header className="min-h-16 w-full border-b-2 border-border sticky top-0 backdrop-blur-xl z-10 text-text-main">
+    <header className="min-h-16 w-full border-b-2 border-border sticky top-0 backdrop-blur-xl z-20 text-text-main">
       <div className="container mx-auto flex items-center justify-between py-2 px-2 lg:px-20">
         {/* logo  */}
         <div id="logo">
