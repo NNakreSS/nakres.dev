@@ -9,6 +9,7 @@ import { ArticleCard } from "../../components/Card";
 import StaggerChildren from "../../components/Animate/StaggerChildren";
 import { useTranslation } from "react-i18next";
 import Article from "../../interfaces/IArticle";
+import { Helmet } from "react-helmet";
 
 const Articles = () => {
   const { t } = useTranslation();
@@ -21,6 +22,10 @@ const Articles = () => {
 
   return (
     <section className="flex flex-col gap-4">
+      <Helmet>
+        <title>{t("pages.articles")}</title>
+        <meta name="descriptipn" content={t("descriptions.articles")} />
+      </Helmet>
       <h1 className="text-text-main text-4xl font-semibold">
         {t("pages.articles").toUpperCase()}
       </h1>

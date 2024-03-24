@@ -7,6 +7,7 @@ import { projects } from "../../data/projects";
 import Tabs from "../../components/Tabs";
 import ProjectContent from "./ProjectContent";
 import Button from "../../components/Button";
+import { Helmet } from "react-helmet";
 
 const getTabsData = (lang: string) =>
   Object.entries(projects).map(([category, items]) => {
@@ -27,6 +28,10 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col gap-4">
+      <Helmet>
+        <title>{t("pages.projects")}</title>
+        <meta name="descriptipn" content={t("descriptions.projects")} />
+      </Helmet>
       <div className="flex items-center justify-between">
         <h1 className="text-text-main text-4xl font-semibold">
           {t("pages.projects").toUpperCase()}

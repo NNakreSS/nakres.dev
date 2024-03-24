@@ -38,5 +38,11 @@
     "backend": "Back-End",
     "mobile": "Mobil",
     "game": "Fivem"
+  },
+  "descriptions": {
+    "home": "Kişisel web sitemdeki projelerim, Medium yazılarım ve iletişim bilgilerimi bulabilirsiniz. Özgeçmişim ve deneyimlerim hakkında daha fazla bilgi edinmek için ziyaret edin.",
+    "projects": "Projelerim sayfası",
+    "contact": "İletişim sayfası",
+    "articles": "Makaleler sayfası"
   }
 }

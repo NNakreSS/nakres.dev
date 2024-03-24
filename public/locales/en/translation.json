@@ -38,5 +38,11 @@
     "backend": "Back-End",
     "mobile": "Mobile",
     "game": "FiveM"
+  },
+  "descriptions": {
+    "home": "You can find my projects, Medium articles, and contact information on my personal website. Visit to learn more about my resume and experiences.",
+    "projects": "Projects page",
+    "contact": "Contact page",
+    "articles": "Articles page"
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -55,6 +56,10 @@ const Contact: React.FC = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>{t("pages.contact")}</title>
+        <meta name="descriptipn" content={t("descriptions.contact")} />
+      </Helmet>
       <h1 className="text-text-main text-4xl font-semibold">
         {t("pages.contact").toUpperCase()}
       </h1>
