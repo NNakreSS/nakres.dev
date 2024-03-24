@@ -27,7 +27,7 @@ const Projects = () => {
   }, [lang]);
 
   return (
-    <div className="flex flex-col gap-4">
+    <section className="flex flex-col gap-4">
       <Helmet>
         <title>{t("pages.projects")}</title>
         <meta name="descriptipn" content={t("descriptions.projects")} />
@@ -43,7 +43,7 @@ const Projects = () => {
         </a>
       </div>
       <Tabs data={tabsData} />
-    </div>
+    </section>
   );
 };
 

@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 const Home = () => {
   const { t } = useTranslation();
   return (
-    <motion.div
+    <motion.section
       className="flex flex-col gap-4 gap-y-40"
       initial={{ opacity: 0, translateY: 30 }}
       animate={{ opacity: 1, translateY: 0 }}
@@ -28,7 +28,7 @@ const Home = () => {
       </div>
       <Technologies />
       <Services />
-    </motion.div>
+    </motion.section>
   );
 };
 
