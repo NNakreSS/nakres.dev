@@ -4,6 +4,7 @@ import { FaGithub, FaYoutube, FaStore } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 // framer motion
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const typeOfIcon: { [key: string]: JSX.Element } = {
   github: <FaGithub />,
@@ -49,7 +50,8 @@ const ProjectCard: React.FC<{
       {/*  Main  */}
       <div className="flex flex-col md:flex-row gap-5 py-5 h-full">
         {project?.img && (
-          <img
+          <LazyLoadImage
+            loading="lazy"
             src={project?.img}
             alt={project.title}
             className="object-cover md:h-52 w-full md:w-6/12 rounded-md"
