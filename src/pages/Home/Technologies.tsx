@@ -6,6 +6,7 @@ import { TechnologieCard } from "../../components/Card";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import Slide from "../../components/Slide";
 import { useTranslation } from "react-i18next";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const myTechnologies = {
   html: "https://www.w3schools.com/html",
@@ -50,7 +51,7 @@ const Technologies = () => {
       <Marquee className="w-full border-y-2 border-border py-5 box-content select-none">
         {Object.entries(myTechnologies).map(([tech, _], index) => {
           return (
-            <img
+            <LazyLoadImage
               loading="lazy"
               key={index}
               className="w-14 lg:w-28 mx-5 lg:mx-10"
