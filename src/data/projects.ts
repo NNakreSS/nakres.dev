@@ -2,7 +2,7 @@ export const projects = {
   web: [
     {
       title: "nakres.dev",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217604910196195378/312642255-55f83d74-f9d8-4eaf-a0e8-506224555dec.png?ex=6604a1f0&is=65f22cf0&hm=a409a0c70a32cca9e1b55989cc3963045905ad551b9d1769df68cfdafe38b1d6&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224765834162077716/image.png?ex=661eaf11&is=660c3a11&hm=eca79925d672a65cf89355146998435cfaa0619c72a770a3fb764706edd9bd43&=&format=webp&quality=lossless&width=687&height=336",
       description: {
         tr: "Portfolio web sitemin açık kaynak kodu.",
         en: "Source code of my portfolio web app.",
@@ -11,7 +11,7 @@ export const projects = {
       links: [
         {
           type: "github",
-          link: "https://github.com/NNakreSS/my_website",
+          link: "https://github.com/NNakreSS/nakres.dev",
         },
         {
           type: "demo",
@@ -21,7 +21,7 @@ export const projects = {
     },
     {
       title: "Url Shortener",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217844552308887603/s.png?ex=6605811f&is=65f30c1f&hm=dd0e5b4d19cc37dc09b6fce100e4554f6641bd04dad6f9e50c314dc7a201595f&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224765752368955442/273471984-afac82d4-7442-4e3e-8bab-1a772ccb7b13.png?ex=661eaefe&is=660c39fe&hm=bb869ba143ec85f187c70b3516f5088e3a3e9cf271b52eafe89bcdcbb67bd2dd&=&format=webp&quality=lossless&width=600&height=437",
       description: {
         tr: "Bu proje, URL'leri kısaltabilen ve kısaltılan URL'leri yönetebilen bir PHP uygulamasını içerir. Ayrıca, bir üyelik sistemi ve yönetici paneli içerir.",
         en: "This project includes a PHP application that can shorten URLs and manage the shortened URLs. It also features a membership system and an admin panel.",
@@ -40,7 +40,7 @@ export const projects = {
     },
     {
       title: "Turkish Checkers",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217606766314000488/302338331-ffbc5d35-7516-4d92-943f-982761bafd5e.png?ex=6604a3ab&is=65f22eab&hm=9950ccdc0240c9ab03f84f9d07c693d9bd6e191623e3447f89292a3bd1200256&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224765910259208224/302338331-ffbc5d35-7516-4d92-943f-982761bafd5e.png?ex=661eaf24&is=660c3a24&hm=1174fca3f5b24f471c8f6233dd08db0cb629f8deeb0df2dcf637664c0befdb79&=&format=webp&quality=lossless&width=687&height=340",
       description: {
         en: "A two-player Turkish checkers game playable on a single device.",
         tr: "Türk daması oyununu tek bir cihaz üzerinde 2 kişinin oynayabileceği bir uygulama.",
@@ -58,8 +58,8 @@ export const projects = {
       ],
     },
     {
-      title: "Typing Speed",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217607142316576898/301333379-14094485-6ec6-43ac-8001-5f258d03c3d0.png?ex=6604a404&is=65f22f04&hm=254a65205a1b6dec108a356140c3afcfb77217604a287d0d0385e19c6c0e363f&=&format=webp",
+      title: "Typing Speed Test",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224765964802068520/301333379-14094485-6ec6-43ac-8001-5f258d03c3d0.png?ex=661eaf31&is=660c3a31&hm=02765ebc74adca98bddb20692c03d79e3b0a8672aeff58b3f6c83d175e1852fc&=&format=webp&quality=lossless&width=687&height=338",
       description: {
         tr: "10 Parmak klavye hız testi.",
         en: "10 Finger keyboard speed test.",
@@ -78,7 +78,7 @@ export const projects = {
     },
     {
       title: "Covid 19 Tracker",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217607291466158192/300976471-bbd46ced-1c16-47bd-aab0-30dc7bc51f01.png?ex=6604a428&is=65f22f28&hm=144d151ca8dd203c1b6d4dbcadd06ae14f606d1233e07903b60b9cae1b3e48ad&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224765995722342521/300976471-bbd46ced-1c16-47bd-aab0-30dc7bc51f01.png?ex=661eaf38&is=660c3a38&hm=4dd9cef4a3218a81878e24731a22d7054864063a75054d4dec170e3bca7ea044&=&format=webp&quality=lossless&width=635&height=437",
       description: {
         tr: "Covid 19 Vakalarının global ve ülke bazlı durum takibini yapabildiğimiz bir uygulama.",
         en: "An application where we can track the global and country-specific situation of Covid-19 cases.",
@@ -97,7 +97,7 @@ export const projects = {
     },
     {
       title: "Note App",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217607417521766551/note.png?ex=6604a446&is=65f22f46&hm=bd4fa6824d70e10caef3453713e7c77ffc204e7f40fe64416b160a07ef32c3aa&=&format=webp&quality=lossless&width=687&height=386",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224766044359622656/299321574-af55eb77-f986-4379-8616-4e676a621449.png?ex=661eaf44&is=660c3a44&hm=4e2828d55d5d1c9b3bd7d8d59d06f2f164fc4fe03aa93b3f93db702a65f1ba1d&=&format=webp&quality=lossless&width=1246&height=701",
       description: {
         tr: "Next UI paketi ile tasarlanmış notlarım uygulaması.",
         en: "A notes application designed with the Next UI package.",
@@ -116,7 +116,7 @@ export const projects = {
     },
     {
       title: "Memory Game",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217607546664124486/memory.png?ex=6604a465&is=65f22f65&hm=72fe13c10badca4adfc490285346d5416c2d80c367bf4baa2f202cc1d95c231f&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224766084926672956/300609979-ad97c2e3-0b3c-4e72-a31a-e1cbc604fd8e.png?ex=661eaf4d&is=660c3a4d&hm=8583a15881be6f4601e3ec744baec10993c26aec48cf67cad7662fe0bf7ed4b2&=&format=webp&quality=lossless&width=687&height=338",
       description: {
         tr: "Kartları eşleştirdiğimiz bir bulmaca hafıza oyunu.",
         en: "A memory puzzle game where we match cards.",
@@ -177,7 +177,7 @@ export const projects = {
     },
     {
       title: "Video Call",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217843147615502486/a.png?ex=66057fd0&is=65f30ad0&hm=9095fb3479cfa41358f2ee6b46459f45877b87f5805ba97c9e867fcc37b3aa00&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224766181265641542/153680251-411a3b70-3318-484e-b7d2-060ca64f7c37.png?ex=661eaf64&is=660c3a64&hm=c18719da37a4639941a17a5432a0be9f603364f593643352512ec35010f1aeb6&=&format=webp&quality=lossless&width=687&height=370",
       description: {
         tr: "Telefonunuza entegre ederek oyun içerisinde kullanabileceğiniz bir görüntülü konuşma özelliği sunar. (qb-phone için default örnek mevcut)",
         en: "Offers a video call feature that you can integrate into your phone and use within the game. (Default example available for qb-phone)",
@@ -211,7 +211,7 @@ export const projects = {
     },
     {
       title: "Arm Wrestling",
-      img: "https://media.discordapp.net/attachments/1148988541846700163/1148989336667304006/image.png?ex=66042e35&is=65f1b935&hm=b2d3bf57d13bcff2121c25a19cd2e782fcdd9f2a0cb43cf69b2ec101487180fd&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224766345556525147/image.png?ex=661eaf8b&is=660c3a8b&hm=eb63204c45a1ec3f2d827c30fd6ee3060eb22602453c263754736c1798ac21b0&=&format=webp&quality=lossless&width=687&height=281",
       description: {
         tr: "NakreS Bilek Güreşi, sunucunuza heyecan verici bir bilek güreşi özelliği ekleyen premium bir FiveM betiğidir. Bu betik, oyuncularınıza benzersiz ve eğlenceli bir etkinlik sunmanıza olanak tanır.",
         en: "NakreS Arm Wrestling  is a premium FiveM script that adds an exciting arm wrestling feature to your server. This script allows you to provide your players with a unique and entertaining activity.",
@@ -230,7 +230,7 @@ export const projects = {
     },
     {
       title: "Zone Creator",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217838733886226442/s.png?ex=66057bb4&is=65f306b4&hm=3ac27dee51ebf0c90d87e53fe57b9e2c8c9a3a8707c58ef4d7ff5ec3f97ab5f4&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224767209604251799/303928942-f105b617-91f2-47fa-9fb5-749ce935d5bb.png?ex=661eb059&is=660c3b59&hm=82a5778ed1cda3adcd83903be23f782ca2b4f7d687a9dc01ec334f8986314819&=&format=webp&quality=lossless&width=687&height=386",
       description: {
         tr: "Zone komut dosyasını kullanarak çoklu bölgelerin daha kolay oluşturulmasını sağlayan bir komut dosyası aracı.(PolyZone veya ox.lib zone).",
         en: "A script tool that facilitates easier creation of polyzones using the Zone script (PolyZone or ox.lib zone).",
@@ -264,7 +264,7 @@ export const projects = {
     },
     {
       title: "Barbecue",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1217842808744837130/a.png?ex=66057f80&is=65f30a80&hm=14c1f0ba408bec7d47440765f474bae85c1659801246eaf8b27bf174c235ec04&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1224768023844360192/a76148b5ec931e293b3107516e5c5b08c9435050.png?ex=661eb11b&is=660c3c1b&hm=981ef9074f695c20ae3d0fb07545cbda361fc404a9aad7d1704500184d4992dd&=&format=webp&quality=lossless&width=687&height=287",
       description: {
         tr: "Bu script, FiveM platformunda kullanılmak üzere geliştirilmiş bir BBQ satış sistemini içerir. Bu sistem, oyuncuların barbekü objeleri oluşturmasına, işlerini yönetmelerine ve çevredeki NPC'lerden sipariş alarak yiyecek satmalarına olanak tanır.",
         en: "This script contains an advanced BBQ sales system developed for use on the FiveM platform. This system allows players to create barbecue objects, manage their business, and sell food by taking orders from nearby NPCs.",
