@@ -51,6 +51,7 @@ const Technologies = () => {
         {Object.entries(myTechnologies).map(([tech, _], index) => {
           return (
             <img
+              loading="lazy"
               key={index}
               className="w-14 lg:w-28 mx-5 lg:mx-10"
               src={`icons/techlonogies/${tech}.svg`}
