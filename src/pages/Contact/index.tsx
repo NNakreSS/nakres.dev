@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
     <section>
       <Helmet>
         <title>{t("pages.contact")}</title>
-        <meta name="descriptipn" content={t("descriptions.contact")} />
+        <meta name="description" content={t("descriptions.contact")} />
       </Helmet>
       <h1 className="text-text-main text-4xl font-semibold">
         {t("pages.contact").toUpperCase()}

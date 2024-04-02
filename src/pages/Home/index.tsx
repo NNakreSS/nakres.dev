@@ -20,7 +20,7 @@ const Home = () => {
     >
       <Helmet>
         <title>{t("pages.home")}</title>
-        <meta name="descriptipn" content={t("descriptions.home")} />
+        <meta name="description" content={t("descriptions.home")} />
       </Helmet>
       <div className="flex w-full flex-col gap-28 lg:gap-10 lg:flex-row text-text-main">
         <CodeBlock />

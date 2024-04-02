@@ -24,7 +24,7 @@ const Articles = () => {
     <section className="flex flex-col gap-4">
       <Helmet>
         <title>{t("pages.articles")}</title>
-        <meta name="descriptipn" content={t("descriptions.articles")} />
+        <meta name="description" content={t("descriptions.articles")} />
       </Helmet>
       <h1 className="text-text-main text-4xl font-semibold">
         {t("pages.articles").toUpperCase()}

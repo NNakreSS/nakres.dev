@@ -30,7 +30,7 @@ const Projects = () => {
     <section className="flex flex-col gap-4">
       <Helmet>
         <title>{t("pages.projects")}</title>
-        <meta name="descriptipn" content={t("descriptions.projects")} />
+        <meta name="description" content={t("descriptions.projects")} />
       </Helmet>
       <div className="flex items-center justify-between">
         <h1 className="text-text-main text-4xl font-semibold">
