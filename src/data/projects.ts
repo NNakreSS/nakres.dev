@@ -137,7 +137,7 @@ export const projects = {
   mobile: [
     {
       title: "Space Voyage",
-      img: "https://media.discordapp.net/attachments/933994040851071026/1220499181710606406/311020273-1098b591-8475-4181-9211-ebca7da10999.png?ex=660f2970&is=65fcb470&hm=86a790358fce65964306ae2e680a5d0de1595871f0530fe538308549af622e50&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1226139523491299448/311020273-1098b591-8475-4181-9211-ebca7da10999.png?ex=6623ae6a&is=6611396a&hm=d5bbb9d07eda06013ecb96d4df0480170ec4b8a3d203569134af71db15777ccf&=&format=webp&quality=lossless&width=687&height=386",
       description: {
         tr: "Kodluyoruz ekibinin düzenlediği Hi-kod 2.0 mobil uygulama atölyesinde birincilik ödülünü kazandı!",
         en: "It won the first prize in the Hi-code 2.0 mobile application workshop organized by the Kodluyoruz team!",
