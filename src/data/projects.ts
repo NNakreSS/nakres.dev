@@ -158,7 +158,7 @@ export const projects = {
   fivem: [
     {
       title: "Bodycam",
-      img: "https://media.discordapp.net/attachments/1221193222446125086/1221193378952253490/BANNER.png?ex=6611aff6&is=65ff3af6&hm=458ee1fe71c6ada90https://media.discordapp.net/attachments/1221193222446125086/1221193378952253490/BANNER.png?ex=662d5f76&is=661aea76&hm=5c2fc8b5d1d3a75b4a28d56110170a7ff0fb258dac0d306eeb74aaf80936c375&=&format=webp&quality=lossless&width=1246&height=7010f283d81fc9caf3d0f5d3e7c7b3b9321b2282de6f12a3fa&=&format=webp",
+      img: "https://media.discordapp.net/attachments/1221193222446125086/1221193378952253490/BANNER.png?ex=662d5f76&is=661aea76&hm=5c2fc8b5d1d3a75b4a28d56110170a7ff0fb258dac0d306eeb74aaf80936c375&=&format=webp&quality=lossless&width=1246&height=701",
       description: {
         tr: "Polis rolleri için oyun içi bodycam kaydı , kaydı izlemek için bodycam tableti , özel kayıt bildirimleri , kayıt özelinde mesajlaşma ,canlı izleme ve dashcam gibi birçok özellik",
         en: "In-game bodycam recording for police roles, a bodycam tablet for watching recordings, special recording notifications, messaging per recording, live streaming, and dashcam-like features.",
