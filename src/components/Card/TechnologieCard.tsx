@@ -22,13 +22,13 @@ const TechnologieCard: React.FC<ITechnologieCard> = (
       <div className="cardTitle flex items-center justify-center h-1/6">
         <span>{title}</span>
       </div>
-      <div className="cardMain flex items-center justify-center h-4/6 group-hover:scale-125 duration-300 filter group-hover:drop-shadow-[0_0_5px_rgba(0,0,0,0.8)]">
-        <div className="w-16 lg:w-28">
+      <div className="cardMain flex items-center justify-center h-4/6 lg:group-hover:scale-125 duration-300 filter lg:group-hover:drop-shadow-[0_0_5px_rgba(0,0,0,0.8)]">
+        <div className="h-28 w-28">
           <LazyLoadImage
             src={imgSrc}
             alt={title}
             loading="lazy"
-            className="w-full h-full"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
