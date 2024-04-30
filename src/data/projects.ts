@@ -2,7 +2,7 @@ export const projects = {
   web: [
     {
       title: "nakres.dev",
-      img: "projects_images/nakres_dev.webp",
+      img: "projectsImages/nakres_dev.webp",
       description: {
         tr: "Portfolio web sitemin açık kaynak kodu.",
         en: "Source code of my portfolio web app.",
@@ -21,7 +21,7 @@ export const projects = {
     },
     {
       title: "Url Shortener",
-      img: "projects_images/url_shortener.webp",
+      img: "projectsImages/url_shortener.webp",
       description: {
         tr: "Bu proje, URL'leri kısaltabilen ve kısaltılan URL'leri yönetebilen bir PHP uygulamasını içerir. Ayrıca, bir üyelik sistemi ve yönetici paneli içerir.",
         en: "This project includes a PHP application that can shorten URLs and manage the shortened URLs. It also features a membership system and an admin panel.",
@@ -40,7 +40,7 @@ export const projects = {
     },
     {
       title: "Turkish Checkers",
-      img: "projects_images/checkers.webp",
+      img: "projectsImages/checkers.webp",
       description: {
         en: "A two-player Turkish checkers game playable on a single device.",
         tr: "Türk daması oyununu tek bir cihaz üzerinde 2 kişinin oynayabileceği bir uygulama.",
@@ -59,7 +59,7 @@ export const projects = {
     },
     {
       title: "Typing Speed Test",
-      img: "projects_images/typing.webp",
+      img: "projectsImages/typing.webp",
       description: {
         tr: "10 Parmak klavye hız testi.",
         en: "10 Finger keyboard speed test.",
@@ -78,7 +78,7 @@ export const projects = {
     },
     {
       title: "Covid 19 Tracker",
-      img: "projects_images/covid.webp",
+      img: "projectsImages/covid.webp",
       description: {
         tr: "Covid 19 Vakalarının global ve ülke bazlı durum takibini yapabildiğimiz bir uygulama.",
         en: "An application where we can track the global and country-specific situation of Covid-19 cases.",
@@ -97,7 +97,7 @@ export const projects = {
     },
     {
       title: "Note App",
-      img: "projects_images/note_app.webp",
+      img: "projectsImages/note_app.webp",
       description: {
         tr: "Next UI paketi ile tasarlanmış notlarım uygulaması.",
         en: "A notes application designed with the Next UI package.",
@@ -116,7 +116,7 @@ export const projects = {
     },
     {
       title: "Memory Game",
-      img: "projects_images/memory_game.webp",
+      img: "projectsImages/memory_game.webp",
       description: {
         tr: "Kartları eşleştirdiğimiz bir bulmaca hafıza oyunu.",
         en: "A memory puzzle game where we match cards.",
@@ -137,7 +137,7 @@ export const projects = {
   mobile: [
     {
       title: "Space Voyage",
-      img: "projects_images/space_voyage.webp",
+      img: "projectsImages/space_voyage.webp",
       description: {
         tr: "Kodluyoruz ekibinin düzenlediği Hi-kod 2.0 mobil uygulama atölyesinde birincilik ödülünü kazandı!",
         en: "It won the first prize in the Hi-code 2.0 mobile application workshop organized by the Kodluyoruz team!",
@@ -158,7 +158,7 @@ export const projects = {
   fivem: [
     {
       title: "Bodycam",
-      img: "projects_images/bodycam.webp",
+      img: "projectsImages/bodycam.webp",
       description: {
         tr: "Polis rolleri için oyun içi bodycam kaydı , kaydı izlemek için bodycam tableti , özel kayıt bildirimleri , kayıt özelinde mesajlaşma ,canlı izleme ve dashcam gibi birçok özellik",
         en: "In-game bodycam recording for police roles, a bodycam tablet for watching recordings, special recording notifications, messaging per recording, live streaming, and dashcam-like features.",
@@ -177,7 +177,7 @@ export const projects = {
     },
     {
       title: "Video Call",
-      img: "projects_images/videocall.webp",
+      img: "projectsImages/videocall.webp",
       description: {
         tr: "Telefonunuza entegre ederek oyun içerisinde kullanabileceğiniz bir görüntülü konuşma özelliği sunar. (qb-phone için default örnek mevcut)",
         en: "Offers a video call feature that you can integrate into your phone and use within the game. (Default example available for qb-phone)",
@@ -192,7 +192,7 @@ export const projects = {
     },
     {
       title: "Taxi Job",
-      img: "projects_images/taxi.webp",
+      img: "projectsImages/taxi.webp",
       description: {
         tr: "Sunucunuza taksi durakları ekleyin, oyuncular eklediğiniz duraklardan lisans alabilir ve istedikleri durağa kayıt olduktan sonra çalışmaya başlayabilirler.",
         en: "Add taxi stops to your server, players can get a license from the stops you add and start work after they register for the desired stand.",
@@ -211,7 +211,7 @@ export const projects = {
     },
     {
       title: "Arm Wrestling",
-      img: "projects_images/wrestling.webp",
+      img: "projectsImages/wrestling.webp",
       description: {
         tr: "NakreS Bilek Güreşi, sunucunuza heyecan verici bir bilek güreşi özelliği ekleyen premium bir FiveM betiğidir. Bu betik, oyuncularınıza benzersiz ve eğlenceli bir etkinlik sunmanıza olanak tanır.",
         en: "NakreS Arm Wrestling  is a premium FiveM script that adds an exciting arm wrestling feature to your server. This script allows you to provide your players with a unique and entertaining activity.",
@@ -230,7 +230,7 @@ export const projects = {
     },
     {
       title: "Zone Creator",
-      img: "projects_images/zone.webp",
+      img: "projectsImages/zone.webp",
       description: {
         tr: "Zone komut dosyasını kullanarak çoklu bölgelerin daha kolay oluşturulmasını sağlayan bir komut dosyası aracı.(PolyZone veya ox.lib zone).",
         en: "A script tool that facilitates easier creation of polyzones using the Zone script (PolyZone or ox.lib zone).",
@@ -245,7 +245,7 @@ export const projects = {
     },
     {
       title: "Lightbar",
-      img: "projects_images/lightbar.webp",
+      img: "projectsImages/lightbar.webp",
       description: {
         tr: "Araçlara çakar ekleyip kullanmanızı ve onları kaydetmenizi sağlayan gelişmiş lightbar scripti.",
         en: "Add lightbar to vehicles, manage them, manage lights and sounds.",
@@ -264,7 +264,7 @@ export const projects = {
     },
     {
       title: "Barbecue",
-      img: "projects_images/barbecue.webp",
+      img: "projectsImages/barbecue.webp",
       description: {
         tr: "Bu script, FiveM platformunda kullanılmak üzere geliştirilmiş bir BBQ satış sistemini içerir. Bu sistem, oyuncuların barbekü objeleri oluşturmasına, işlerini yönetmelerine ve çevredeki NPC'lerden sipariş alarak yiyecek satmalarına olanak tanır.",
         en: "This script contains an advanced BBQ sales system developed for use on the FiveM platform. This system allows players to create barbecue objects, manage their business, and sell food by taking orders from nearby NPCs.",
