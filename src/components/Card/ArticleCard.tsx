@@ -30,7 +30,7 @@ const ArticleCard: React.FC<any> = ({ article, className }): ReactNode => {
         <a
           href={Article.link}
           target="_blank"
-          className="text-2xl text-text-main/50 hover:text-text-main hover:scale-110 transition duration-300 cursor-pointer"
+          className="text-2xl text-text-main/50 lg:hover:text-text-main lg:hover:scale-110 transition duration-300 cursor-pointer"
         >
           <FaExternalLinkAlt />
         </a>
