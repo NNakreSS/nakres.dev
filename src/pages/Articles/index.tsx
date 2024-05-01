@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 const Articles = () => {
   const { t } = useTranslation();
   const dispatch: any = useDispatch();
-  const articles = useSelector(articlesSelector).articles;
+  const { articles, loading } = useSelector(articlesSelector);
 
   useEffect(() => {
     dispatch(fetchArticles());
@@ -30,7 +30,7 @@ const Articles = () => {
         {t("pages.articles").toUpperCase()}
       </h1>
       <StaggerChildren className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 min-h-[45vh]">
-        {articles ? (
+        {!loading ? (
           articles?.map((article: Article, index: number) => (
             <ArticleCard
               key={index}
