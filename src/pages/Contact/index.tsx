@@ -3,9 +3,15 @@ import { useTranslation } from "react-i18next";
 import Button from "../../components/Button";
 import axios from "axios";
 import { Helmet } from "react-helmet";
+import { toast } from "react-toastify";
+import { themeSelector } from "../../redux/slicers/themeSlice";
+import { useSelector } from "react-redux";
+import Spinner from "../../components/Loading/Spinner";
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
+  const { darkMode } = useSelector(themeSelector);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -25,33 +31,49 @@ const Contact: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await axios.post(import.meta.env.VITE_CONTACT_WEBHOOK, {
-      embeds: [
-        {
-          title: "Yeni İletişim Formu",
-          color: 0x00ff00, // Renk kodu (Yeşil)
-          fields: [
-            {
-              name: "Ad",
-              value: formData.name,
-            },
-            {
-              name: "E-posta",
-              value: formData.email,
-            },
-            {
-              name: "Mesaj",
-              value: formData.message,
-            },
-          ],
-        },
-      ],
-    });
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    setLoading(true);
+    try {
+      await axios.post(import.meta.env.VITE_CONTACT_WEBHOOK, {
+        embeds: [
+          {
+            title: "Yeni İletişim Formu",
+            color: 0x00ff00, // Renk kodu (Yeşil)
+            fields: [
+              {
+                name: "Ad",
+                value: formData.name,
+              },
+              {
+                name: "E-posta",
+                value: formData.email,
+              },
+              {
+                name: "Mesaj",
+                value: formData.message,
+              },
+            ],
+          },
+        ],
+      });
+
+      toast.success(t("contact_success"), {
+        autoClose: 3000,
+        position: "top-right",
+        theme: darkMode ? "dark" : "light",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -113,7 +135,7 @@ const Contact: React.FC = () => {
               variant="filled"
               className="w-full !text-white"
             >
-              {t("send")}
+              {loading ? <Spinner /> : t("send")}
             </Button>
           </div>
         </form>
