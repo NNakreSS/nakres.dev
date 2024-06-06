@@ -11,6 +11,7 @@
   "name": "İsim",
   "email": "Email",
   "send": "Gönder",
+  "contact_success": "Mesajınız başarıyla gönderilmiştir. En kısa sürede dönüş yapılacaktır",
   "message": "Mesaj",
   "pages": {
     "home": "Anasayfa",

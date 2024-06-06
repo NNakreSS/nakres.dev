@@ -11,6 +11,7 @@
   "name": "Name",
   "email": "Email",
   "send": "Send",
+  "contact_success": "Your message has been sent successfully. We will return as soon as possible",
   "message": "Message",
   "pages": {
     "home": "Home",
