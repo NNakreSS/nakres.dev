@@ -9,6 +9,7 @@ import { ArticleCard } from "../../components/Card";
 import { useTranslation } from "react-i18next";
 import Article from "../../interfaces/IArticle";
 import { Helmet } from "react-helmet";
+import Spinner from "../../components/Loading/Spinner";
 
 const Articles = () => {
   const { t } = useTranslation();
@@ -39,11 +40,7 @@ const Articles = () => {
           ))}
         </div>
       ) : (
-        <div className="w-full col-span-full flex justify-center">
-          <div className="flex justify-center items-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-200"></div>
-          </div>
-        </div>
+        <Spinner />
       )}
     </section>
   );
