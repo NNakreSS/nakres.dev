@@ -46,7 +46,7 @@ const Footer = () => {
             <FaYoutube />
           </a>
           <a
-            href="https://www.linkedin.com/in/serkan-atmaca-04a60a277/"
+            href="https://www.linkedin.com/in/nakresdev/"
             target="_blank"
             rel="noreferrer"
             className="hover:text-blue-600 hover:scale-110 duration-300"
