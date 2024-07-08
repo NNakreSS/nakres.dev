@@ -1,15 +1,15 @@
 # Step 1: Build the React app
-FROM node:14 AS build
+FROM node:20 AS build
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json yarn.lock ./
 
-RUN npm install
+RUN yarn
 
 COPY . ./
 
-RUN npm run build
+RUN yarn build
 
 # Step 2: Serve the app with an Nginx server
 FROM nginx:alpine
