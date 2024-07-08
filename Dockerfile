@@ -1,18 +1,23 @@
-# stage 1
-FROM node:20-alpine AS build
+# Step 1: Build the React app
+FROM node:14 AS build
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
-RUN yarn
+COPY package.json package-lock.json ./
 
-COPY . .
-RUN yarn build
+RUN npm install
 
-# stage 2
+COPY . ./
+
+RUN npm run build
+
+# Step 2: Serve the app with an Nginx server
 FROM nginx:alpine
 
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Copy a default nginx configuration to handle routing
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
